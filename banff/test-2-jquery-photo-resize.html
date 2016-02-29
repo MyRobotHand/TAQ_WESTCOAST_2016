@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+		<title>Adjust Photo on Browser Window</title> 
+		<meta charset="utf-8"> 
+		<script src="http://code.jquery.com/jquery-latest.js"></script> 
+		<script src="jquery-photo-resize.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$("img").photoResize({
+					bottomSpacing: 0
+				});
+			});
+		</script>
+		<style type="text/css" media="screen">
+			body { text-align: left; }
+		</style>
+		<link href="test-2-jquery-photo-resize.css" rel="stylesheet" type="text/css">
+</head> 
+	<body>
+    	<div id="container">
+		<img src="images/09-tiny-atlas-quarterly-emily-nathan-banff-state-of-light-L.jpg" alt="">
+        </div>
+	</body> 
+</html>

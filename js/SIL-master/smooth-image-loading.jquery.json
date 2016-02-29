@@ -1,0 +1,32 @@
+{
+    "name": "smooth-image-loading",
+    "title": "Smooth Image Loading",
+    "description": "A jQuery plugin to load images sequentially, thereby ensuring smoothness of prevalent loading animations.",
+    "keywords": [
+        "smooth",
+	"sequential",
+	"progressive",
+        "image",
+	"load",
+	"preload",
+	"animation",
+	"lag",
+	"anti-lag",
+	"ajax"
+    ],
+    "version": "1.0.4",
+    "author": {
+            "name": "Fede",
+            "email": "fede-lasse@outlook.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/Fede-lasse/SIL/blob/master/LICENSE"
+        }
+    ],
+    "homepage": "https://github.com/Fede-lasse/SIL/",
+    "dependencies": {
+        "jquery": ">=1.11"
+    }
+}
