@@ -20,7 +20,7 @@ footer {
 }
 
 #theedition .fade {
-	 
+
 }
 
 
@@ -37,9 +37,9 @@ footer {
 	background-color: #000;
 	color: #fff;
 	display: block;
-	
-	/* opacity:0.8; 
-    filter:alpha(opacity=80); 
+
+	/* opacity:0.8;
+    filter:alpha(opacity=80);
 	border-bottom: solid 1px #666; */
 }
 /*.header-logo {
@@ -85,6 +85,46 @@ footer {
 	display:inline;
 }
 
+.header-links {
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.header-links ul {
+	list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 190px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+.header-links ul li {
+	text-align: left;
+	padding: 5px;
+	padding-left: 10px;
+  background: #000;
+  display: block;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+/*.header-links ul li:hover { background: #666; }*/
+.header-links:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
 /*----------- END TOP NAV ------------------------------------------*/
 /*----------- START NAV ------------------------------------------*/
 
@@ -99,21 +139,21 @@ footer {
 	width: 26%;
 }
 
-#nav { 
+#nav {
 	text-align:center;
 }
 
 #nav li, #nav ul {
 	margin: 0px;
 	padding: 0px;
-	
+
 }
 
 #nav li {
 	list-style: none;
 	text-transform: uppercase;
 	display:inline;
-	
+
 }
 
 #nav li a {
@@ -127,7 +167,7 @@ footer {
 #nav li a:hover, #nav li a:active {
 	text-decoration:underline;
 	color:#666;
-} 
+}
 /*----------- END NAV ------------------------------------------*/
 
 
@@ -139,7 +179,7 @@ footer {
 }
 
 .past-issues {
-	margin-top:7em; 
+	margin-top:7em;
 	border-top: solid 2px #fff;
 }
 
@@ -195,7 +235,7 @@ footer {
 	top: 100%;
 }
 .da-slideFromLeft {
-	top: 0px; 
+	top: 0px;
 	left: -100%;
 }
 .da-slideFromRight {
@@ -219,7 +259,7 @@ footer {
 }*/
 
 #extraWide {
-	width:66% !important; 
+	width:66% !important;
 }
 
 .da-thumbs .container{
@@ -230,6 +270,19 @@ footer {
 	background-color: rgba(255,255,255,0.75);
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+/*----------- FIRE 2015 --------------*/
+.da-thumbs .kalahari{
+	background-image: url(../images/preview-kalahari.png);
+}
+
+.da-thumbs .myanmar{
+	background-image: url(../images/preview-myanmar.png);
+}
+
+.da-thumbs .ptreyes{
+	background-image: url(../images/preview-ptreyes.png);
 }
 
 /*----------- EARTH 2015 --------------*/
@@ -337,71 +390,99 @@ footer {
 	z-index:1;
 }
 
-/*            
+/*
 			<div class="dotLayout"><div id="roadtripEverglades" class="dot">roadtrip</div></div>	*/
-			
+
+
+/*--- FIRE 2015 DOTS ---*/
+
+#travellogCartagena {
+	background-image:url(../cartagena/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#photographerIceland {
+	background-image:url(../iceland/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#homeJoshuaTree {
+	background-image:url(../joshuatree/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#beautyOahu {
+	background-image:url(../beauty/oahu/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#fashionRockaways {
+	background-image:url(../rockaways/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
 /*--- EARTH 2015 DOTS ---*/
 
-#fieldworkMiki { 
+#fieldworkMiki {
 	background-image:url(../fieldwork/miki/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
-#travellogSacredValley { 
+#travellogSacredValley {
 	background-image:url(../travellog/sacred-valley/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
-#ranchChicoBasin { 
+#ranchChicoBasin {
 	background-image:url(../ranch/chico-basin/images/dot.jpg);
 	background-size: 100% 100%;
 }
-	
-			
+
+
 /*--- WATER DOTS ---*/
 
-#familyCostaBrava { 
+#familyCostaBrava {
 	background-image:url(../familytravel/costabrava/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#photographerTahiti { 
+#photographerTahiti {
 	background-image:url(../photographer/tahiti/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#travellogBerlin { 
+#travellogBerlin {
 	background-image:url(../travellog/berlin/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#conserveBigSur { 
+#conserveBigSur {
 	background-image:url(../conserve/bigsur/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
-#roadtripEverglades { 
+#roadtripEverglades {
 	background-image:url(../roadtrip/everglades/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
 /*--- AIR DOTS ---*/
 
-#surfElSalvador { 
+#surfElSalvador {
 	background-image:url(../surf/elsalvador/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#familyTravelNicaragua { 
+#familyTravelNicaragua {
 	background-image:url(../familytravel/nicaragua/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#travellogHongKong { 
+#travellogHongKong {
 	background-image:url(../travellog/hongkong/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#workshopJaipur { 
+#workshopJaipur {
 	background-image:url(../workshop/jaipur/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
-#hotspringsBridgeport { 
+#hotspringsBridgeport {
 	background-image:url(../hotsprings/bridgeport/images/dot.jpg);
 	background-size: 100% 100%;
 }
@@ -410,63 +491,63 @@ footer {
 
 /*--- SOLSTICE DOTS ---*/
 
-#fieldworkMckenna { 
+#fieldworkMckenna {
 	background-image:url(../fieldwork/mckenna/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
-#beautyFtGreen { 
+#beautyFtGreen {
 	background-image:url(../beauty/ftgreen/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
-#profileWrenn { 
+#profileWrenn {
 	background-image:url(../profile/wrenn/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
-#travellogCabrera { 
+#travellogCabrera {
 	background-image:url(../travellog/cabrera/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
-#forageSaltPoint { 
+#forageSaltPoint {
 	background-image:url(../forage/saltpoint/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
 /*--- SUMMER DOTS ---*/
-#travellogSantorini { 
+#travellogSantorini {
 	background-image:url(../travellog/santorini/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#makerChristenson { 
+#makerChristenson {
 	background-image:url(../maker/chrischristenson/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#familytravelFinland { 
+#familytravelFinland {
 	background-image:url(../familytravel/finland/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#fieldworkTahiti { 
+#fieldworkTahiti {
 	background-image:url(../fieldwork/tahiti/images/dot.jpg);
 	background-size: 100% 100%;
 }
-#beautyBrooklyn { 
+#beautyBrooklyn {
 	background-image:url(../beauty/brooklyn/images/dot.jpg);
 	background-size: 100% 100%;
 }
 
 /*--- SPRING DOTS ---*/
-#roadtripSantaBarbara { 
+#roadtripSantaBarbara {
 	background-image:url(../roadtrip/images/santabarbara-dot.png);
 	background-size: 100% 100%;
 }
-#travellogSwitzerland { 
+#travellogSwitzerland {
 	background-image:url(../travellog/images/switzerland-dot.png);
 	background-size: 100% 100%;
 }
-#hotspringsCalistoga { 
+#hotspringsCalistoga {
 	background-image:url(../hotsprings/calistoga/images/dot.png);
 	background-size: 100% 100%;
 }
@@ -495,7 +576,7 @@ footer {
 	width: 10em;
 	margin: 1em;
 	text-shadow: 0px 1px 3px #808080;
-	
+
 	cursor: pointer;
 	-webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
@@ -517,37 +598,37 @@ footer {
 
 /*----------- RESPONSIVE ------------------------------------------*/
 @media (max-width:600px) {
-	body { 
+	body {
    }
-   
+
 	#masthead img {
 		margin: 4%;
 		width: 40%;
 	}
-	
-	
+
+
 	#nav li {
 		font-size: 1em;
 		line-height:108%;
 		margin: 0 0 0.8em 0;
 		padding: 0px;
 	}
-	
+
 	.da-thumbs li {
 		width: 100%;
 		display:block;
 	}
-	
+
 	.dotLayout {
 		display: block;
 		text-align:center;
 		position:relative;
 		width: 100%
 	}
-	
+
 	.dot {
 	}
-	
+
 	.header-links-container {
 	display:inline-block;
 	float:right;
@@ -556,37 +637,37 @@ footer {
 	width:100%;
 	/*background-color:#000;*/
 }
-  
+
 }
 
 /*----------- MOBILE -------------*/
 @media (max-width:768px) {
-	body { 
+	body {
    }
-   
+
 	#masthead img {
 		margin: 4%;
 		width: 40%;
 	}
-	
+
 	#nav {
 	}
-	
+
 	#nav li {
 		font-size: 1em;
 		line-height:108%;
 		margin: 0 0 0.8em 0;
 		padding: 0px;
 	}
-	
+
 	.da-thumbs li {
 		width: 50%;
 	}
-	
+
 	.dotLayout {
 		width:100%;
 	}
-	
+
 	.welcome-showhide {
 		display:none;
 	}
@@ -611,7 +692,7 @@ footer {
 		width: 10em;
 		margin: 1em;
 	}
-	
+
 	/*.header-logo {
 		display: inline-block;
 	}*/
@@ -625,16 +706,16 @@ footer {
 @media (min-width:960px) {
 	body {
 	}
-	
+
 	#masthead img {
 		margin: 4%;
 		width: 20%;
 	}
-	
+
 	.dotLayout {
 	width:33%;
 	}
-	
+
 	.dot {
 		-moz-border-radius: 10.0em;
 		-webkit-border-radius: 10.0em;
@@ -645,7 +726,7 @@ footer {
 		width: 10.0em;
 		margin: 1em;
 	}
-	
+
 	.header-logo {
 		display: inline-block;
 	}
@@ -659,20 +740,20 @@ footer {
 @media (min-width:1720px) {
 	body {
 	}
-	
+
 	#masthead img {
 		margin: 4%;
 		width: 20%;
 	}
-	
+
 	.da-thumbs li {
 		width: 16.66666666666667%;
 	}
-	
+
 	.dotLayout {
 	width:18%;
 	}
-	
+
 	.dot {
 		-moz-border-radius: 10.8;
 		-webkit-border-radius: 10.8;
@@ -683,7 +764,7 @@ footer {
 		width: 10.8;
 		margin: 0.8em;
 	}
-	
+
 	.header-logo {
 		display: inline-block;
 	}

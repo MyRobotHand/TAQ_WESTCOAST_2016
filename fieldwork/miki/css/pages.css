@@ -695,13 +695,7 @@ div.pg-credits-box img {
 		column-gap: 1.5em;
 		column-rule: none;
 		column-width: 100%;
-		
-		top: 76.42%; left: 30%; width:62%;
-	}
-	
-	#pg-interview {
-		top: 76.42%; left: 30%; width:62%;
-	}
+}
 
 #page-editorial-box-dark {
 	top:			80%;

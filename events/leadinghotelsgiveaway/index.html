@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tiny Atlas Quarterly | Leading Hotels Give Away</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="../css/pages-events.css" />
+        <link rel="shortcut icon" href="../../images/favicon.png">
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../js/jquery.lazyload.min.js"></script>
+
+    </head>
+</head>
+<body>
+<script>
+var people = [
+  {
+      "image": "@zioandsons-greenwich-hotel-01-sq",
+      "gram": "zioandsons",
+      "name": "Zio and Sons",
+      "hotel": "Greenwich Hotel, New York City",
+      "link": "http://www.lhw.com/hotel/The-Greenwich-Hotel-New-York-NY?rooms=1&numadult1=2&numchild1=0"
+  },
+  {
+      "image": "@zioandsons-greenwich-hotel-02-sq",
+      "gram": "zioandsons",
+      "name": "Zio and Sons",
+      "hotel": "Greenwich Hotel, New York City",
+      "link": "http://www.lhw.com/hotel/The-Greenwich-Hotel-New-York-NY?rooms=1&numadult1=2&numchild1=0"
+  },
+  {
+      "image": "@zioandsons-greenwich-hotel-03-sq",
+      "gram": "zioandsons",
+      "name": "Zio and Sons",
+      "hotel": "Greenwich Hotel, New York City",
+      "link": "http://www.lhw.com/hotel/The-Greenwich-Hotel-New-York-NY?rooms=1&numadult1=2&numchild1=0"
+  },
+  {
+        "image": "@absinthemindedswede-sweden-sq",
+        "gram": "absinthemindedswede",
+        "name": "PJ Boman",
+        "hotel": "Stockholm, Sweden",
+        "link": "http://www.lhw.com/hotel/Grand-Hotel-Stockholm-Stockholm-Sweden?rooms=1&numadult1=2&numchild1=0"
+    },
+    {
+        "image": "@bruns1983-ponta-dos-ganchos-sq",
+        "gram": "bruns1983",
+        "name": "Chris Brunning",
+        "hotel": "Ponta dos Ganchos Resort, Brazil",
+        "link": "http://www.lhw.com/hotel/Ponta-dos-Ganchos-Governor-Celso-Ramos-Santa-Catarina-Brazil"
+    },
+    {
+        "image": "@pontadosganchos-ponta-dos-ganchos-sq",
+        "gram": "pontadosganchos",
+        "name": "Ponta dos Ganchos Resort",
+        "hotel": "Ponta dos Ganchos Resort, Brazil",
+        "link": "http://www.lhw.com/hotel/Ponta-dos-Ganchos-Governor-Celso-Ramos-Santa-Catarina-Brazil"
+    },
+    {
+        "image": "@ray_mccann-ponta-dos-ganchos-03-sq",
+        "gram": "wray_mccann",
+        "name": "Christopher Wray-Mccann",
+        "hotel": "Ponta dos Ganchos Resort, Brazil",
+        "link": "http://www.lhw.com/hotel/Ponta-dos-Ganchos-Governor-Celso-Ramos-Santa-Catarina-Brazil"
+    },
+    {
+        "image": "@ray_mccann-ponta-dos-ganchos-05-sq",
+        "gram": "wray_mccann",
+        "name": "Christopher Wray-Mccann",
+        "hotel": "Ponta dos Ganchos Resort, Brazil",
+        "link": "http://www.lhw.com/hotel/Ponta-dos-Ganchos-Governor-Celso-Ramos-Santa-Catarina-Brazil"
+    },
+    {
+        "image": "@heidilender-hotel-fasano-punta-del-este-01-sq",
+        "gram": "heidilender",
+        "name": "Heidi Lender",
+        "hotel": "Hotel Fasano Punta del Este, Uruguay",
+        "link": "http://www.lhw.com/hotel/Hotel-Fasano-Punta-del-Este-Uruguay"
+    },
+    {
+        "image": "@ernathan-amsterdam-sq",
+        "gram": "ernathan",
+        "name": "Emily Nathan",
+        "hotel": "Amsterdam, Netherlands",
+        "link": "http://www.lhw.com/hotel/Conservatorium-Hotel-Amsterdam-Netherlands?rooms=1&numadult1=2&numchild1=0"
+    },
+    {
+        "image": "@oddwei-ubud-bali-sq",
+        "gram": "oddwie",
+        "name": "Audrey Ma",
+        "hotel": "Ubud, Bali",
+        "link": "http://www.lhw.com/hotel/The-Chedi-Club-Tanah-Gajah-Ubud-Bali-Indonesia?rooms=1&numadult1=2&numchild1=0"
+    },
+    {
+        "image": "@scooterromatours-lazio-italy-sq",
+        "gram": "scooteromatours",
+        "name": "Annie Ojile",
+        "hotel": "Lazio, Italy",
+        "link": "http://www.lhw.com/hotel/La-Posta-Vecchia-Hotel-Ladispoli-Italy?rooms=1&numadult1=2&numchild1=0"
+    },
+	{
+        "image": "@elice_f-Rocco-Forte-Balmoral-Hotel-Edinburgh-Scotland",
+        "gram": "elice_f",
+        "name": "Elice F",
+        "hotel": "Highland, Scotland",
+        "link": "http://www.lhw.com/hotel/Rocco-Forte-Balmoral-Hotel-Edinburgh-Scotland?rooms=1&numadult1=2&numchild1=0"
+    },
+	{
+        "image": "@elice_f_Cafe-Royal-Hotel-London-England",
+        "gram": "elice_f",
+        "name": "Elice F",
+        "hotel": "London, England",
+        "link": "http://www.lhw.com/hotel/Cafe-Royal-Hotel-London-England?rooms=1&numadult1=2&numchild1=0"
+    },
+	
+	{
+        "image": "@scooteromatours_Belmond-Villa-San-Michele-Fiesole-Italy",
+        "gram": "scooteromatours",
+        "name": "Annie Ojile",
+        "hotel": "Highland, Scotland",
+        "link": "http://www.lhw.com/hotel/Belmond-Villa-San-Michele-Fiesole-Italy?rooms=1&numadult1=2&numchild1=0"
+    },
+	
+    {
+        "image": "@ernathan-lhorizon-resort-and-spa-01-sq",
+        "gram": "ernathan",
+        "name": "Emily Nathan",
+        "hotel": "L'Horizon Hotel and Spa, Palm Springs",
+        "link": "http://www.lhw.com/hotel/LHorizon-Resort-Spa-Palm-Springs-CA?rooms=1&numadult1=2&numchild1=0"
+    },
+    {
+        "image": "@ernathan-lhorizon-resort-and-spa-04-sq",
+        "gram": "ernathan",
+        "name": "Emily Nathan",
+        "hotel": "L'Horizon Hotel and Spa, Palm Springs",
+        "link": "http://www.lhw.com/hotel/LHorizon-Resort-Spa-Palm-Springs-CA?rooms=1&numadult1=2&numchild1=0"
+    },
+    {
+        "image": "@ernathan-lhorizon-resort-and-spa-05-sq",
+        "gram": "ernathan",
+        "name": "Emily Nathan",
+        "hotel": "L'Horizon Hotel and Spa, Palm Springs",
+        "link": "http://www.lhw.com/hotel/LHorizon-Resort-Spa-Palm-Springs-CA?rooms=1&numadult1=2&numchild1=0"
+    },
+    {
+        "image": "@ernathan-the-puli-hotel-and-spa-01-sq",
+        "gram": "ernathan",
+        "name": "Emily Nathan",
+        "hotel": "The PuLi Hotel and Spa, Shanghai",
+        "link": "http://www.lhw.com/hotel/The-PuLi-Hotel-Spa-Shanghai-China?rooms=1&numadult1=2&numchild1=0"
+    },
+    {
+        "image": "@ernathan-the-puli-hotel-and-spa-02-sq",
+        "gram": "ernathan",
+        "name": "Emily Nathan",
+        "hotel": "The PuLi Hotel and Spa, Shanghai",
+        "link": "http://www.lhw.com/hotel/The-PuLi-Hotel-Spa-Shanghai-China?rooms=1&numadult1=2&numchild1=0"
+    },
+    {
+        "image": "@ernathan-the-puli-hotel-and-spa-03-sq",
+        "gram": "ernathan",
+        "name": "Emily Nathan",
+        "hotel": "The PuLi Hotel and Spa, Shanghai",
+        "link": "http://www.lhw.com/hotel/The-PuLi-Hotel-Spa-Shanghai-China?rooms=1&numadult1=2&numchild1=0"
+    }
+]
+var newHTML = [];
+
+$(document).on("ready", function() {
+
+  $.each(people, function(i, value) {
+    newHTML.push('<div class="gram"><a href="http://instagram.com/'+ value.gram +'" target="_blank"><img class="lazy" src="images/'+ value.image + '.jpg" alt="' + value.name + '" /><p>'+ value.gram + '</p></a><a href="'+ value.link +'" target="_blank"><p class="hotels">'+ value.hotel + '</p></a></div>');
+  });
+  $(".grid-wrapper").html(newHTML.join("  "));
+});
+
+$(function() {
+  $("img.lazy").lazyload({
+    threshold : 200
+  });
+});
+
+</script>
+
+<!-- <div class="header-container">
+			<div class="header-links-container">
+
+            <span class="header-links"><a href="about/index.html">Events</a></span>
+            <span class="header-links"><a href="about/index.html">About</a></span>
+			<span class="header-links"><a href="about/masthead.html">Masthead</a></span>
+            <span class="header-links"><a href="about/stockists.html">Stockists</a></span>
+            <span class="header-links"><a href="http://shop.tinyatlasquarterly.com/products/pre-order-the-printed-annual" target="_blank">Shop</a></span>
+            </div>
+</div> -->
+
+
+
+
+
+<div class="details">
+<h1>THE LEADING HOTELS <br>OF THE WORLD: UNCOMMON TRAVEL GIVEAWAY</h1>
+<p>Tiny Atlas is thrilled to partner with <a href="http://www.lhw.com" target="_blank">The Leading Hotels of the World</a> on a remarkable giveaway for THREE winners from our instagram audience.</p>
+
+<p>We will be posting two Leading Hotel images on the <a href="https://instagram.com/tinyatlasquarterly" target="_blank">@tinyatlasquarterly</a> instagram page.</p>
+
+<p>To enter followers must:</p>
+
+<p>1. Comment on one of the two posts telling us your favorite Leading Hotel and why, from over 400 members worldwide.</p>
+
+<p>2. Be sure you are following <a href="https://instagram.com/leadinghotelsoftheworld" target="_blank">@leadinghotelsoftheworld</a> and <a href="https://instagram.com/tinyatlasquarterly" target="_blank">@tinyatlasquarterly</a> on Instagram to be eligible.</p>
+
+<p>That’s it! The winners will be announced on our feed on October 18th.</p>
+</p>
+<p><a href="https://instagram.com/explore/tags/uncommontravel/" target="_blank">#uncommontravel</a><br>
+<a href="https://instagram.com/explore/tags/lhwtraveler/" target="_blank">#lhwtraveler</a></p>
+<p><a href="legal.html" target="_blank">contest rules</a></p>
+  </div>
+  <div class="img-head">
+  <img src="images/03-tiny-atlas-quarterly-fire-place-emily-nathan-L.jpg" alt="">
+  <div class="gram" id="title-g">
+    <a href="http://instagram.com/ernathan" target="_blank"><p>ernathan</p></a>
+    <a href="http://www.lhw.com/hotel/LHorizon-Resort-Spa-Palm-Springs-CA" target="_blank"><p class="hotels">L'Horizon Hotel and Spa</p></a>
+
+  </div>
+  </div>
+  <div class="grid-wrapper">
+
+  </div>
+
+
+
+
+  <div id="nav-holder"><div id="nav"><a href="../../index.html"><img src="../../images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></a></div></div>
+
+</body>
+</html>

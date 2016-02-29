@@ -10,6 +10,28 @@ $(document).ready(function() {
 			window.location = url;
 		}
 		
+		// FIRE 2015 -->
+		$('#travellogCartagena').on('click', function() {
+			TAQ_dotnav("cartagena/index.html");
+		});
+		
+		$('#photographerIceland').on('click', function() {
+			TAQ_dotnav("iceland/index.html");
+		});
+		
+		$('#homeJoshuaTree').on('click', function() {
+			TAQ_dotnav("joshuatree/index.html");
+		});
+		
+		$('#beautyOahu').on('click', function() {
+			TAQ_dotnav("beauty/oahu/index.html");
+		});
+		
+		$('#fashionRockaways').on('click', function() {
+			TAQ_dotnav("rockaways/index.html");
+		});
+		
+		
 		// EARTH 2015 -->
 		$('#fieldworkMiki').on('click', function() {
 			TAQ_dotnav("fieldwork/miki/index.html");
