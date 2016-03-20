@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tiny Atlas Quarterly | Los Angeles</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="css/pages.css" />
+        <link rel="shortcut icon" href="../images/favicon.png">
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="../js/velocity.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.transit.js"></script>
+
+		<script>
+		// Picture element HTML5 shiv
+		document.createElement( "picture" );
+		</script>
+		<script src="../js/picturefill.2.1.0.js" async></script>
+
+        <script src="../js/sil.js"></script>
+
+        <script>
+        $(window).load(function () {
+    		//This is where you could start a loading animation.
+
+    		//Then start loading the images.
+    		$.preloadImages({
+        		StepCallback: function (CurrentImage, TotalImages, LoadedElement, LoadTime) {
+            	console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+            	//This is where you could update some sort of progress indicator.
+        		},
+
+        		DoneCallback: function () {
+            	console.log("Done loading the images.");
+
+            	//This is where you could stop the loading animation.
+        		}
+    		});
+		});
+		</script>
+
+        <script type="text/javascript">
+				$(function(){
+    				$("#page1").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
+					$("#nav-buttons").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
+					$("#nav-holder").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
+				});
+        </script>
+
+    </head>
+
+
+<body id="taqPage">
+
+            <!-- PAGE NAVIGATION ------------------------------------------------------------->
+            <div id="nav-buttons" class="pg-nav"><span class="pg-prev" id="pg-pageDown"></span><span class="pg-next" id="pg-pageUp"></span></div>
+            <div style="display:none;">
+            <img src="../images/arrow_next.png">
+            <img src="../images/arrow_prev.png">
+            <img src="../images/blank-L.png">
+            <img src="../images/blank-S.png">
+            <img src="../images/tiny-atlas-sm.jpg">
+            </div>
+
+            <!-- PAGE 01 ------------------------------------------------------------->
+            <div id="page1" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/01-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/01-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/01-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 01 ------------------------------------------------------------->
+
+            <!-- PAGE 02 ------------------------------------------------------------->
+            <div id="page2" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/02-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/02-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/02-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 02 ------------------------------------------------------------->
+
+            <!-- PAGE 03 ------------------------------------------------------------->
+            <div id="page3" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/03-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/03-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/03-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 03 ------------------------------------------------------------->
+
+            <!-- PAGE 04 ------------------------------------------------------------->
+            <div id="page4" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/04-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/04-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/04-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 04 ------------------------------------------------------------->
+
+            <!-- PAGE 05 ------------------------------------------------------------->
+            <div id="page5" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/05-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/05-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/05-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+
+
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 05 ------------------------------------------------------------->
+
+            <!-- PAGE 06 ------------------------------------------------------------->
+            <div id="page6" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/06-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/06-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/06-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 06 ------------------------------------------------------------->
+
+            <!-- PAGE 07 ------------------------------------------------------------->
+            <div id="page7" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/07-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/07-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/07-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 07 ------------------------------------------------------------->
+
+            <!-- PAGE 08 ------------------------------------------------------------->
+            <div id="page8" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/08-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/08-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/08-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 08 ------------------------------------------------------------->
+
+            <!-- PAGE 09 ------------------------------------------------------------->
+            <div id="page9" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/09-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/09-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/09-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 09 ------------------------------------------------------------->
+
+            <!-- PAGE 10 ------------------------------------------------------------->
+            <div id="page10" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/10-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/10-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/10-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+
+
+                                <!-- BOX  INTERVIEW-->
+                                     <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+
+
+                                <!-- CAPTION -->
+                                <!-- LEFT CAPTION -->
+                                <div class="pg-box-content">
+                                   <!-- CONTENT -->
+                                   <!-- INTERVIW -->
+                                   <div id="pg-interview">
+                                     <h2>Notes on directing a first feature film</h2>
+                                     <h3>By Amanda Marsalis</h3>
+
+                                   <p>Echo Park came to me as I sat in a friend’s apartment in New York. An email arrived out of the blue asking if I would like to direct a movie. The script was about my neighborhood, Echo Park. Where I live! I could not believe it. It was so serendipitous. It was a gift.</p>
+                                   <br />
+                                   <p>The movie Echo Park was a story of my neighborhood featuring a woman my age making a change in her life. The story was not my own, but I set out to make it so. I wanted to look into a moment in someone’s life. Transition. Intimacy. Hope. These themes spoke to me when I read the script.</p>
+                                   <br />
+                                   <p>I was lucky to find Jason my DP (director of photography), and then Mamie Gummer, who became my muse. It was extraordinary all the help and support that followed. I am used to the more solitary act of taking a photo. I was surprised at what a pleasure it was to collaborate. My crew and colleagues were so excited to make this film even through all the challenges</p>
+                                   <br />
+                                   <p> I put myself into the film. My furniture, my photos, my friends, my neighborhood. I used everything I had. I gave the film everything. </p>  
+                                   </div>
+                              </div><!--END INTERVIEW -->
+                            </div> <!-- END CAPTION BOX -->
+
+
+
+
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 10 ------------------------------------------------------------->
+
+            <!-- PAGE 11 ------------------------------------------------------------->
+            <div id="page11" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/11-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/11-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/11-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 11 ------------------------------------------------------------->
+
+            <!-- PAGE 12 ------------------------------------------------------------->
+            <div id="page12" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/12-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/12-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/12-tiny-atlas-quarterly-amanda-marsalis-east-los-angeles-S.jpg" alt="Tiny Atlas Quarterly, Los Angeles, Amanda Marsalis">
+                </picture>
+                <!-- IMAGE END -->
+
+
+                <!-- box CONTRIBUTORS -->
+                <div class="pg-box" id="page-resources-box">
+                    <!-- page content -->
+                    <h1>Contributors /<br />Resources</h1>
+                    <div class="pg-box-content" id="page-resources-box-content">
+
+                    <!-- | -->
+                    <div class="pg-credits-box">
+                    <span class="pg-contributor">Photographer</span>
+                    <br /><a href="http://www.amandamarsalis.com" target="_blank">Amanda Marsalis</a>
+                    </div>
+
+                    <!-- | -->
+                    <div class="pg-credits-box">
+                    <span class="pg-contributor">Stay</span>
+                    <br /><a href="http://www.hotelcovell.com/hotel-covell" target="_blank">Hotel Covell</a>
+                    <br /><a href="http://farmersdaughterhotel.com/" target="_blank">Farmer’s Daughter</a>
+                    </div>
+
+                    <!-- | -->
+                    <div class="pg-credits-box">
+                    <span class="pg-contributor">Eat</span>
+                    <br /><a href="http://sqirlla.com/" target="_blank">Squirl</a>
+                    <br /><a href="http://cafestella.com/about/" target="_blank">Café Stella</a>
+                    <br /><a href="http://www.lamag.com/digestblog/hip-square-dinette-brings-new-look-flavor-echo-park/" target="_blank">Dinette</a>
+                    <br /><a href="https://twitter.com/tacozone" target="_blank">Taco Zone</a>
+                    </div>
+
+                    <!-- | -->
+                    <div class="pg-credits-box">
+                    <span class="pg-contributor">Do</span>
+                    <br /><a href="http://www.laparks.org/dos/parks/facility/elysianpk.htm" target="_blank">Elysian Park</a>
+                    <br /><a href="http://www.laparks.org/dos/aquatic/facility/echopklake.htm" target="_blank">Echo Park Lake</a>
+                    <br /><a href="http://origamiorigami.com/" target="_blank">Origami Vinyl</a>
+                    <br /><a href="http://www.mohawkgeneralstore.com/" target="_blank">Mohawk General Store</a>
+                    <br /><a href="http://www.cookbookla.com/" target="_blank">Cookbook, a neighborhood green grocer</a>
+                    </div>
+                  </div><!-- end page content -->
+              </div> <!-- end box div -->
+
+
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 12 ------------------------------------------------------------->
+
+
+
+
+<!-- PAGE 0 ------------------------------------------------------------->
+        	<!-- wrapper div -->
+            <div id="page-zero" class="pg-page">
+            <div class="pg-wrapper">
+               <!-- image -->
+               <img src="../images/blank-L.png" />
+           </div><!-- end wrapper div -->
+           		<!-- NAV -->
+          		<div id="nav-holder"><div id="nav"><a href="../index.html"><img src="../images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></a></div></div>
+           </div>
+          <!-- END PAGE 0 ------------------------------------------------------------->
+
+        <script type="text/javascript" src="../js/hammer.min.js"></script>
+        <script>
+			//----------------- SLIDE SHOW ------------------------------//
+			var pgPages = new Array(	"page1",
+									"page2",
+									"page3",
+									"page5",
+									"page4",
+									"page6",
+									"page7",
+									"page8",
+									"page9",
+									"page10",
+									"page11",
+									"page12");
+			var pageCount = 0;
+			var pageNext;
+			$('#pg-pageUp').on('click', function() {
+				pageUp();
+			});
+
+			$('#pg-pageDown').on('click', function() {
+				pageDown();
+			});
+
+			//------ START UP DOWN ------//
+			function pageUp()
+			{
+				if (pageCount == (pgPages.length - 1)) {
+					$("#" + pgPages[pgPages.length - 1]).velocity({ opacity: 0 }, { display: "none" }, { duration: 1000 } , "easeInOutQuint");	// OUT
+					pageCount = 0;
+					$("#" + pgPages[pageCount]).velocity({ opacity: 1 }, { display: "block" }, { duration: 1000 } , "easeInOutQuint"); 			// IN
+				} else {
+					pageNext = pageCount + 1;
+					$("#" + pgPages[pageCount]).velocity({ opacity: 0 }, { display: "none" }, { duration: 1000 } , "easeInOutQuint"); 			// OUT
+					$("#" + pgPages[pageNext]).velocity({ opacity: 1 }, { display: "block" }, { duration: 1000 } , "easeInOutQuint"); 			// IN
+					pageCount++;
+				}
+			}
+
+			function pageDown()
+			{
+				if (pageCount == 0) {
+					$("#" + pgPages[0]).velocity({ opacity: 0 }, { display: "none" });  								// OUT
+					$("#" + pgPages[pgPages.length - 1]).velocity({ opacity: 1 }, { display: "block" }, { duration: 1000 } , "easeInOutQuint");	// IN
+					pageCount = pgPages.length - 1;
+				} else {
+					pageNext = pageCount - 1;
+					$("#" + pgPages[pageCount]).velocity({ opacity: 0 }, { display: "none" }, { duration: 1000 } , "easeInOutQuint");			// OUT
+					$("#" + pgPages[pageNext]).velocity({ opacity: 1 }, { display: "block" }, { duration: 1000 } , "easeInOutQuint");			// IN
+					pageCount--;
+				}
+			}
+			//------ END UP DOWN ------//
+
+			// TOUCH HANDLERS
+				var myElement = document.getElementById('taqPage');
+				var mc = new Hammer(myElement);
+
+				// listen to events...
+				mc.on("swipeleft", function() {
+    				pageUp();
+				});
+				mc.on("swiperight", function() {
+    				pageDown();
+				});
+			//----------------- END SLIDE SHOW -----------------//
+
+
+			//------------------ NAV WIDTH -----------------//
+
+
+
+        <!-------------------- THE GOOGLE --------------------->
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-39716054-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+</body>
+</html>
