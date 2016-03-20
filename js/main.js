@@ -10,6 +10,27 @@ $(document).ready(function() {
 			window.location = url;
 		}
 		
+		// WEST COAST 2016 -->
+		$('#directorLosAngeles').on('click', function() {
+			TAQ_dotnav("los-angeles/index.html");
+		});
+		
+		$('#familyBrittany').on('click', function() {
+			TAQ_dotnav("brittany/index.html");
+		});
+		
+		$('#homeSanFrancisco').on('click', function() {
+			TAQ_dotnav("san-francisco/index.html");
+		});
+		
+		$('#surfLaPush').on('click', function() {
+			TAQ_dotnav("la-push/index.html");
+		});
+		
+		$('#roadtripBaja').on('click', function() {
+			TAQ_dotnav("baja/index.html");
+		});
+		
 		// FIRE 2015 -->
 		$('#travellogCartagena').on('click', function() {
 			TAQ_dotnav("cartagena/index.html");

@@ -272,6 +272,19 @@ footer {
 	background-position: center center;
 }
 
+/*----------- WEST COAST 2016 --------------*/
+.da-thumbs .porto{
+	background-image: url(../images/preview-porto.png);
+}
+
+.da-thumbs .faroe{
+	background-image: url(../images/preview-faroe.png);
+}
+
+.da-thumbs .torres-des-paine{
+	background-image: url(../images/preview-torres-des-paine.png);
+}
+
 /*----------- FIRE 2015 --------------*/
 .da-thumbs .kalahari{
 	background-image: url(../images/preview-kalahari.png);
@@ -392,6 +405,33 @@ footer {
 
 /*
 			<div class="dotLayout"><div id="roadtripEverglades" class="dot">roadtrip</div></div>	*/
+
+/*--- WEST COAST 2016 DOTS ---*/
+
+#directorLosAngeles {
+	background-image:url(../los-angeles/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#familyBrittany {
+	background-image:url(../brittany/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#homeSanFrancisco {
+	background-image:url(../san-francisco/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#surfLaPush {
+	background-image:url(../la-push/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#roadtripBaja {
+	background-image:url(../baja/images/dot.jpg);
+	background-size: 100% 100%;
+}
 
 
 /*--- FIRE 2015 DOTS ---*/
