@@ -132,8 +132,8 @@ div.pg-box {
 
 div.pg-trans-bg {
 	background-color:#FFF;  
-	opacity:0.8; 
-    filter:alpha(opacity=80); /* IE transparency */
+	opacity:0.9; 
+    filter:alpha(opacity=90); /* IE transparency */
 }
 
 div.pg-header {
@@ -518,15 +518,13 @@ div.text-box-a a:hover, div.text-box-a a:active {
 }
 
 #page-resources-box {
-	top:	15%;
-    left:	56%;  
-    width:	38%;
-	
-	background-color:#FFF;  
-	opacity:0.8; 
-    filter:alpha(opacity=80); /* IE transparency */
-	
-	padding: 1.5em 3em 1em 1.5em;	
+	top: 15%;
+	left: 56%;
+	width: 38%;
+	background-color: #FFF;
+	opacity: 0.8;
+	filter: alpha(opacity=90); /* IE transparency */
+	padding: 1.5em 3em 1em 1.5em;
 	text-align: left;
 }
 
