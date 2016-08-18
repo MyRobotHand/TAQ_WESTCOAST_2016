@@ -55,16 +55,32 @@
 
 /*--------------- Edie---------------------------*/
 @font-face {
-    font-family: 'Edie-Mono';
-    src: url('webfonts/Edie-Mono.otf') format('opentype');
-  }
+	font-family: 'Edie-Mono';
+	src: url('webfonts/Edie-Mono.eot');
+	src: url('webfonts/Edie-Mono.eot?#iefix') format('embedded-opentype'),
+		url('webfonts/Edie-Mono.woff') format('woff'),
+		url('webfonts/Edie-Mono.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
 
 /*--------------- GT-Haptik---------------------------*/
 @font-face {
-    font-family: 'GT-Haptik-Light';
-    src: url('webfonts/GT-Haptik-Light.otf') format('opentype');
+	font-family: 'GT-Haptik-Light';
+	src: url('webfonts/GTHaptikLight.eot');
+	src: url('webfonts/GTHaptikLight.eot?#iefix') format('embedded-opentype'),
+		url('webfonts/GTHaptikLight.woff') format('woff'),
+		url('webfonts/GTHaptikLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
+
 @font-face {
-    font-family: 'GT-Haptik-Regular';
-    src: url('webfonts/GT-Haptik-Regular.otf') format('opentype');
+	font-family: 'GT-Haptik-Regular';
+	src: url('webfonts/GTHaptikRegular.eot');
+	src: url('webfonts/GTHaptikRegular.eot?#iefix') format('embedded-opentype'),
+		url('webfonts/GTHaptikRegular.woff') format('woff'),
+		url('webfonts/GTHaptikRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }

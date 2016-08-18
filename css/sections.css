@@ -170,6 +170,44 @@ footer {
 }
 /*----------- END NAV ------------------------------------------*/
 
+/*----------- Kickstarter Promo --------------*/
+#kickstarter {
+	max-width:960px;
+	margin: 40px auto 0px;
+
+	font-family: 'GT-Haptik-Light', helvetica, sans-serif;
+	line-height: 1.6em;
+	display:block;
+}
+
+#kickstarter img{
+display:inline-block;
+max-width: 300px;
+}
+#kickstarter div{
+float: right;
+width:calc(100% - 360px);
+max-width: 600px;
+padding: 60px 30px 20px;
+}
+
+@media (max-width:700px) {
+	#kickstarter div{
+		width:90%;
+		padding: 10px 30px 20px;
+	}
+}
+
+
+
+#kickstarter a {
+color: #f98c55;
+transition: .3s ease-in-out;
+}
+#kickstarter a:hover {
+color: #e25813;
+}
+
 
 /*----------- START TILES ------------------------------------------*/
 .issue {
