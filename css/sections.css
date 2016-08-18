@@ -180,6 +180,10 @@ footer {
 	display:block;
 }
 
+#kickstarter h2 {
+	letter-spacing: 2px;
+}
+
 #kickstarter img{
 display:inline-block;
 max-width: 300px;
