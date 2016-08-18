@@ -822,8 +822,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
 .centered .img-head img {
 		padding: 0px;
 }
-.centered .space{
-padding:100px 0px;
+
+
+.centered .grid-wrapper{
+padding: 0px 20px 0px 30px;
 }
 
 .centered h2{
