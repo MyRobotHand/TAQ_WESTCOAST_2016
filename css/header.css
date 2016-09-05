@@ -11,7 +11,7 @@
 	background-color: #000;
 	color: #fff;
 	display: block;
-	font-family: 'GT-Haptik-Regular', sans-serif;
+	font-family: 'GT-Haptik-light', sans-serif;
 	box-sizing: border-box;
 	/* opacity:0.8;
     filter:alpha(opacity=80);
@@ -19,8 +19,7 @@
 }
 .header-logo {
 	display: inline-block;
-	padding: 10px;
-	width: 60px;
+	width: 30px;
 	box-sizing: border-box;
 }
 
@@ -28,7 +27,8 @@
 	display:inline-block;
 	float:right;
 	text-align:right;
-	margin-right: 3em;
+	margin-top:7px;
+	margin-right: 1em;
 	/*background-color:#000;*/
 }
 .header-links-container a {
@@ -90,12 +90,20 @@
 	padding-left: 10px;
   background: #000;
   display: block;
+	z-index:99;
 }
 /*.header-links ul li:hover { background: #666; }*/
 .header-links:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
+}
+
+.list-triangle:after{
+	display: inline-block;
+    content: url('../images/triangle.png');
+width: 8px;
+height: 6px;
 }
 
 /*----------- Media Queries ------------------------------------------*/
