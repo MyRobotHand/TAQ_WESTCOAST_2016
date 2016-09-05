@@ -74,8 +74,7 @@ footer {
 /*----------- Kickstarter Promo --------------*/
 #kickstarter {
 	max-width:960px;
-	margin: 60px auto 0px;
-
+	margin: 40px auto 0px;
 	font-family: 'GT-Haptik-Light', helvetica, sans-serif;
 	line-height: 1.6em;
 	display:block;
@@ -108,9 +107,6 @@ color: #e25813;
 	#kickstarter div{
 		width:90%;
 		padding: 10px 30px 20px;
-	}
-	#kickstarter{
-			margin: 80px auto 0px;
 	}
 }
 
