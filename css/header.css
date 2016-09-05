@@ -1,0 +1,122 @@
+/*----------- START TOP NAV ------------------------------------------*/
+.header-container {
+	text-transform: uppercase;
+	padding: 0.5em 1em;
+	margin:0;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	color: #333;
+	display: block;
+	font-family: 'GT-Haptik-Regular', sans-serif;
+	box-sizing: border-box;
+	/* opacity:0.8;
+    filter:alpha(opacity=80);
+	border-bottom: solid 1px #666; */
+}
+.header-logo {
+	display: inline-block;
+	padding: 10px;
+	width: 60px;
+	box-sizing: border-box;
+}
+
+.header-links-container {
+	display:inline-block;
+	float:right;
+	text-align:right;
+	margin-top: 30px;
+	margin-right: 10px;
+	/*background-color:#000;*/
+}
+.header-links-container a {
+	color:#333;
+}
+
+.header-links-container a:link {
+    text-decoration: none;
+}
+
+.header-links-container a:visited {
+    text-decoration: none;
+}
+
+.header-links-container a:hover {
+    text-decoration: underline;
+}
+
+.header-links-container a:active {
+    text-decoration: none;
+}
+
+.header-links {
+	font-size: 0.9em;
+	padding: 0 0.6em;
+}
+
+.welcome-showhide {
+	display:inline;
+}
+
+.header-links {
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.header-links ul {
+	list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 190px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+.header-links ul li {
+	text-align: left;
+	padding: 5px;
+	padding-left: 10px;
+  background: #fff;
+  display: block;
+}
+/*.header-links ul li:hover { background: #666; }*/
+.header-links:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*----------- Media Queries ------------------------------------------*/
+@media (max-width:600px) {
+	.header-container{
+		box-sizing: border-box;
+	}
+	.header-logo{
+		display: inherit;
+		margin:auto;
+		width: 40px;
+		padding:0;
+	}
+	.header-links-container {
+	display:inline-block;
+	float:right;
+	text-align:center;
+	margin-right: 0;
+	margin-top: 10px;
+	width:100%;
+	/*background-color:#000;*/
+	}
+}

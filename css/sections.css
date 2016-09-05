@@ -24,106 +24,7 @@ footer {
 }
 
 
-/*----------- START TOP NAV ------------------------------------------*/
-.header-container {
-	text-transform: uppercase;
-	padding: 0.5em 1em;
-	margin:0;
-	position: fixed;
-	z-index: 100;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background-color: #000;
-	color: #fff;
-	display: block;
 
-	/* opacity:0.8;
-    filter:alpha(opacity=80);
-	border-bottom: solid 1px #666; */
-}
-/*.header-logo {
-	display:inline-block;
-	width:0%;
-}*/
-
-.header-links-container {
-	display:inline-block;
-	float:right;
-	text-align:right;
-	margin-right: 4em;
-	width:100%;
-	/*background-color:#000;*/
-}
-.header-links-container a {
-	color:#fff;
-}
-
-.header-links-container a:link {
-    text-decoration: none;
-}
-
-.header-links-container a:visited {
-    text-decoration: none;
-	color:#CCC;
-}
-
-.header-links-container a:hover {
-    text-decoration: underline;
-}
-
-.header-links-container a:active {
-    text-decoration: none;
-}
-
-.header-links {
-	font-size:1.1em;
-	padding: 0 0.6em;
-}
-
-.welcome-showhide {
-	display:inline;
-}
-
-.header-links {
-	padding-bottom: 10px;
-	position: relative;
-}
-
-.header-links ul {
-	list-style: none;
-  padding: 0;
-  position: absolute;
-  top: 9px;
-  left: 0;
-  width: 190px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-}
-.header-links ul li {
-	text-align: left;
-	padding: 5px;
-	padding-left: 10px;
-  background: #000;
-  display: block;
-  color: #fff;
-  text-shadow: 0 -1px 0 #000;
-}
-/*.header-links ul li:hover { background: #666; }*/
-.header-links:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
 
 /*----------- END TOP NAV ------------------------------------------*/
 /*----------- START NAV ------------------------------------------*/
@@ -173,7 +74,7 @@ footer {
 /*----------- Kickstarter Promo --------------*/
 #kickstarter {
 	max-width:960px;
-	margin: 40px auto 0px;
+	margin: 60px auto 0px;
 
 	font-family: 'GT-Haptik-Light', helvetica, sans-serif;
 	line-height: 1.6em;
@@ -195,15 +96,6 @@ max-width: 600px;
 padding: 60px 30px 20px;
 }
 
-@media (max-width:700px) {
-	#kickstarter div{
-		width:90%;
-		padding: 10px 30px 20px;
-	}
-}
-
-
-
 #kickstarter a {
 color: #f98c55;
 transition: .3s ease-in-out;
@@ -212,6 +104,15 @@ transition: .3s ease-in-out;
 color: #e25813;
 }
 
+@media (max-width:700px) {
+	#kickstarter div{
+		width:90%;
+		padding: 10px 30px 20px;
+	}
+	#kickstarter{
+			margin: 80px auto 0px;
+	}
+}
 
 /*----------- START TILES ------------------------------------------*/
 .issue {
@@ -711,15 +612,6 @@ color: #e25813;
 	.dot {
 	}
 
-	.header-links-container {
-	display:inline-block;
-	float:right;
-	text-align:center;
-	margin-right: 1em;
-	width:100%;
-	/*background-color:#000;*/
-}
-
 }
 
 /*----------- MOBILE -------------*/
@@ -808,14 +700,6 @@ color: #e25813;
 		width: 10.0em;
 		margin: 1em;
 	}
-
-	.header-logo {
-		display: inline-block;
-	}
-
-	.header-links-container {
-		display: inline-block;
-	}
 }
 
 /*----------- BIG -------------*/
@@ -845,13 +729,5 @@ color: #e25813;
 		line-height: 10.8;
 		width: 10.8;
 		margin: 0.8em;
-	}
-
-	.header-logo {
-		display: inline-block;
-	}
-
-	.header-links-container {
-		display: inline-block;
 	}
 }
