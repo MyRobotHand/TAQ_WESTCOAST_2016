@@ -25,6 +25,87 @@ footer {
 
 
 
+<<<<<<< Updated upstream
+=======
+.header-links-container {
+	display:inline-block;
+	float:right;
+	text-align:right;
+	margin-right: 4em;
+	width:100%;
+	/*font-family: 'GT-Haptik-Light', helvetica, sans-serif;*/
+	/*background-color:#000;*/
+}
+.header-links-container a {
+	color:#fff;
+}
+
+.header-links-container a:link {
+    text-decoration: none;
+}
+
+.header-links-container a:visited {
+    text-decoration: none;
+	color:#CCC;
+}
+
+.header-links-container a:hover {
+    text-decoration: underline;
+}
+
+.header-links-container a:active {
+    text-decoration: none;
+}
+
+.header-links {
+	font-size:1.1em;
+	padding: 0 0.6em;
+}
+
+.welcome-showhide {
+	display:inline;
+}
+
+.header-links {
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.header-links ul {
+	list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 190px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+.header-links ul li {
+	text-align: left;
+	padding: 5px;
+	padding-left: 10px;
+  background: #000;
+  display: block;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+/*.header-links ul li:hover { background: #666; }*/
+.header-links:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+>>>>>>> Stashed changes
 
 /*----------- END TOP NAV ------------------------------------------*/
 /*----------- START NAV ------------------------------------------*/
