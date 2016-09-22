@@ -765,7 +765,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	 transform: translateX(0px);
    padding: 20px 30px 30px;
    height: auto;
-   width:640px;
+   width:770px;
 	 max-width: 100%;
 	 color: #7A7A7A;
    background-color: #fff;
@@ -779,10 +779,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		font-family: 'Edie-Mono', helvetica, sans-serif;
 }
 
-.details-card a{
+.details-card a, .lead-in a{
 	color: #f98c55;
 }
-
 
 .details-card .sidebar p{
 		float: left;
@@ -792,12 +791,16 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 .details-card .sidebar p{
-	margin: 0 0 1em;
+	margin: 0 30px 1em 0;
 }
 .details-card .sidebar .label{
 	font-family: 'GT-Haptik-Regular', helvetica, sans-serif;
 	text-transform: uppercase;
 	font-size: .7em;
+}
+.details-card .main-content {
+display: inline-block;
+max-width: 550px;
 }
 
 .grid-wrapper {
@@ -806,7 +809,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 .centered .grid-wrapper {
-	margin: 10px auto;
+	margin: 10px auto 50px;
 }
 
 .centered .img-head{
@@ -829,22 +832,35 @@ only screen and (min-device-pixel-ratio : 1.5) {
     margin-right: auto;
     width: 400px;
 		max-width:60%;
-
 }
 
 .centered .img-head img {
 		padding: 0px;
 }
 
-
 .centered .grid-wrapper{
 padding: 0px 20px 0px 30px;
+display:table;
+}
+
+.centered h1{
+font-family: 'GT-Haptik-Regular', helvetica, sans-serif !important;
+text-align:center;
+font-size: 2.5em;
+color: #000;
 }
 
 .centered h2{
 font-family: 'GT-Haptik-Regular', helvetica, sans-serif !important;
 text-align:center;
 font-size: 1.8em;
+}
+
+.centered .lead-in{
+	max-width: 770px;
+	padding:0 20px;
+	margin: 20px auto 40px;
+	color: #7A7A7A;
 }
 
 .centered .gram p{
@@ -972,12 +988,6 @@ a p {
 	    width: 100%;
 	}
 
-}
-
-@media (max-width:600px) {
-	.header {
-		height:100px;
-}
 }
 
 

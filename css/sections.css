@@ -78,6 +78,7 @@ footer {
   top: 9px;
   left: 0;
   width: 190px;
+	z-index: 99;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -158,7 +159,7 @@ footer {
 	margin: 40px auto 0px;
 	font-family: 'GT-Haptik-Light', helvetica, sans-serif;
 	line-height: 1.6em;
-	display:block;
+	display: inline-block;
 }
 
 #kickstarter h2 {
@@ -187,7 +188,7 @@ color: #e25813;
 @media (max-width:700px) {
 	#kickstarter div{
 		width:90%;
-		padding: 10px 30px 20px;
+		padding: 10px 30px 0px;
 	}
 }
 
