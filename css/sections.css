@@ -660,6 +660,7 @@ color: #e25813;
 /*----------- RESPONSIVE ------------------------------------------*/
 @media (max-width:600px) {
 	body {
+		padding-top:40px;
    }
 
 	#masthead img {
