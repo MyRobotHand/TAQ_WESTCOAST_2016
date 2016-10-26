@@ -189,7 +189,12 @@ color: #e25813;
 		width:90%;
 		padding: 10px 30px 0px;
 	}
+	#kickstarter{
+		display: inline-block;
+	}
 }
+
+
 
 /*----------- START TILES ------------------------------------------*/
 .issue {
