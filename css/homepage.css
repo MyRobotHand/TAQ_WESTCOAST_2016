@@ -1,0 +1,164 @@
+body {
+  font-family: 'calendas-plus';
+  background-color: #f7f7f7;
+}
+
+a{
+  color:#232323;
+  text-decoration:none;
+}
+
+.split {
+  width: 50%;
+  min-height: 100vh;
+  display: inline-block;
+  padding-bottom: 20vh
+}
+
+.content {
+  float: left;
+}
+
+.cover {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/city-cover.png) center no-repeat;
+  background-size: cover;
+  float: left;
+  position: fixed;
+  z-index: -1;
+}
+
+.main-logo img {
+  display: block;
+  max-width: 134px;
+  margin: 100px auto 40px;
+}
+
+.discription {
+  max-width: 400px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
+/* ====== Feature Cards ====== */
+
+.feature-grid {
+  max-width: 800px;
+  padding: 0 3%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: #fff;
+  height: auto;
+  margin: 20px auto;
+  box-shadow: 0px 3px 8px rgba(0,0,0,.2);
+}
+
+.feature-small {
+  min-height: 380px;
+  height: 420px;
+  width: 44%;
+  min-width: 200px;
+  position: relative;
+  /*   padding: 0 10px 10px 10px;   */
+}
+
+.feature-small .preview {
+  max-width: 100%;
+}
+
+.feature-small .info {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.feature-small .title {
+  margin-top: 40px;
+  max-width: 170px;
+  max-height:80px;
+}
+
+.feature-card .text {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.feature-large {
+  width: 94%;
+  position: relative;
+}
+
+.feature-large .preview {
+  width: 50%;
+  float: left;
+}
+
+.feature-large .title {
+  width: 230px;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.feature-large .info {
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+
+/* ====== Sections ====== */
+
+.section {
+  display: flex;
+  z-index: 99;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 10vh 0;
+}
+
+
+/* ====== Trips ====== */
+
+.trips .description {
+  width: 96%;
+  margin:auto;
+}
+
+.trip{
+  margin:auto;
+  width: 96vw;
+  height:90vh;
+  position:relative;
+  margin-bottom: 40px;
+  background-size: cover;
+}
+
+.trip .details {
+  width: 380px;
+  max-width:65%;
+  position: absolute;
+  bottom: 40px;
+  left:40px;
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+
+}
+
+
+/* ====== UI Elements ====== */
+
+button{
+  border: 1px solid #232323;
+  padding:10px 20px;
+  background-color: #fff;
+  text-transform: uppercase;
+}

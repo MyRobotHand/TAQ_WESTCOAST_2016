@@ -1,0 +1,14 @@
+#nav-holder{
+  background-color: #fff;
+position: fixed;
+z-index: 99;
+bottom: 0;
+}
+
+@media (max-width: 600px) {
+
+div.pg-page {
+  display:block;
+}
+
+}
