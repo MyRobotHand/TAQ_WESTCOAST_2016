@@ -15,7 +15,8 @@ ul#share-menu li a {
 	display: block;
 	float: left;
 	height: 44px;
-	background-image: url(../images/share-menu-sprite.png); text-indent: -9999px;
+	background-image: url(../images/share-menu-sprite.png);
+	text-indent: -9999px;
 }
 
 	ul#share-menu li a.instagram {
@@ -27,7 +28,8 @@ ul#share-menu li a {
 	}
 
 	ul#share-menu li a.pinterest {
-		width: 54px; background-position: -74px 0;
+		width: 54px;
+		background-position: -74px 0;
 	}
 
 	ul#share-menu li a.twitter {
@@ -72,7 +74,7 @@ ul#share-menu li a {
 	}
 
 
-a { outline: none; }
+a {outline: none;padding-bottom: 3px;/* border-bottom: 1px solid #232323; */}
 
 #share-menu li:after {content: "."; display: block; height: 1em; clear: both; visibility: hidden;}
 
@@ -86,16 +88,7 @@ a { outline: none; }
 	overflow: visible;
 }
 
-#share-label, #newsletter-label {
-
-	display: block;
-	position: relative;
-	width: 50%;
-	float: left;
-	text-align: left;
-	text-indent: 5px;
-	font-size: 0.8em;
-}
+#share-label, #newsletter-label {display: block;position: relative;width: 50%;float: left;text-align: center;text-indent: 5px;font-size: 0.8em;}
 
 #newsletter-label {
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Tiny Atlas Quarterly | Masthead &amp; Contributors, West Coast 2016</title>
+        <title>Tiny Atlas Quarterly | About</title>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +9,8 @@
 
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="css/pages-masthead.css" />
-
+        <link rel="stylesheet" type="text/css" href="../css/features.css" />
+        <link rel="stylesheet" type="text/css" href="../css/header.css" />
         <link rel="shortcut icon" href="../images/favicon.png">
 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -24,300 +24,174 @@
 		</script>
 		<script src="../js/picturefill.2.1.0.js" async></script>
 
+        <script src="../js/sil.js"></script>
+
+        <script>
+        $(window).load(function () {
+    		//This is where you could start a loading animation.
+
+    		//Then start loading the images.
+    		$.preloadImages({
+        		StepCallback: function (CurrentImage, TotalImages, LoadedElement, LoadTime) {
+            	console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+            	//This is where you could update some sort of progress indicator.
+        		},
+
+        		DoneCallback: function () {
+            	console.log("Done loading the images.");
+
+            	//This is where you could stop the loading animation.
+        		}
+    		});
+		});
+		</script>
+
         <script type="text/javascript">
 				$(function(){
     				$("#page1").each(function(index) {
 						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
     				});
-
+					$("#nav-buttons").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
 					$("#nav-holder").each(function(index) {
 						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
     				});
 				});
         </script>
+
     </head>
-</head>
 
-<body>
+
+<body id="taqPage">
+
+  <div class="header-container">
+      <div class="header-logo">
+          <a href="../index.html"><img src="../images/TAQ-logo.png" alt="" class="logo"></a>
+      </div>
+      <div class="header-links-container">
+        <span class="header-links list-triangle"><a href="../index.html">Current Issue</a>
+          <ul>
+            <li><a href="editors-letter.html">Editor's Letter</a></li>
+            <li><a href="masthead.html" class="link-active">Masthead</a></li>
+          </ul>
+        </span>
+        <span class="header-links"><a href="index.html">About</a></span>
+        <span class="header-links list-triangle"><a href="../events/solas/index.html">Events</a>
+          <ul>
+           <li><a href="../events/solas/index.html">SOLAS</a></li>
+           <li><a href="../events/tahiti-tofino/index.html">Tiny Atlas Trips</a></li>
+           <li><a href="../events/leadinghotelsgiveaway/index.html">Giveaway: Leading Hotels</a></li>
+           <li><a href="../events/montauk/index.html">Montauk Show</a></li>
+          </ul>
+        </span>
+
+        <span class="header-links"><a href="https://tiny-atlas-solas-a-casual-camera-bag-for-photograp.backerkit.com/hosted_preorders" target="_blank">Shop</a>
+        </span>
+      </div>
+  </div>
+
             <!-- PAGE NAVIGATION ------------------------------------------------------------->
-            <!--<div class="pg-nav"><span id="pg-pageDown" class="pg-prev"></span><span id="pg-pageUp" class="pg-next"></span></div>-->
-            <div style="display:none;"><img src="../images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></div>
 
-          <!-- PAGE 23 ------------------------------------------------------------->
-        	<!-- wrapper div -->
-			<div id="page1" class="pg-page">
-            <div class="pg-wrapper">
 
-               <!-- IMAGE START -->
-               <picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/masthead-tiny-atlas-quarterly-west-coast-collin-erie-L.jpg" media="(min-width: 960px)">
-                 <source srcset="images/masthead-tiny-atlas-quarterly-west-coast-collin-erie-M.jpg" media="(min-width: 768px)">
-					<!--[if IE 9]></video><![endif]-->
-					<img srcset="images/masthead-tiny-atlas-quarterly-west-coast-collin-erie-S.jpg" alt="Tiny Atlas Quarterly">
-			  </picture>
+            <!-- PAGE 01 ------------------------------------------------------------->
+            <div id="page1" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/15_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/15_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/15_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Alto Minho, Emily Nathan">
+                </picture>
                 <!-- IMAGE END -->
 
-               <!-- box div -->
-               <div class="pg-box" id="page1-box">
-                   <!-- page content -->
-                   <h2>Tiny Atlas Quarterly<br />Masthead &amp; Contributors<br />West Coast 2016</h2>
-                   <div class="pg-box-content" id="page1-box-content">
+                <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light masthead">
 
-                   		<div class="pg-credits-box">
-						<br /><a href="mailto:info@tinyatlasquarterly.com?subject=Tiny&nbsp;Atlas&nbsp;Quarterly">info@tinyatlasquarterly.com</a>
-                        </div>
-
-                        <div class="pg-credits-box">
-						<a href="http://instagram.com/tinyatlasquarterly" target="_blank">tinyatlasquarterly.com</a>
-						<br />@tinyatlasquarterly
-						<br />#mytinyatlas
-                        </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">Founder / Publisher / Creative Director</span>
-                       <br /><a href="mailto:emily@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">Emily Nathan</a>
+                    <!-- CAPTION -->
+                    <!-- LEFT CAPTION -->
+                    <div class="pg-box-content">
+                       <!-- CONTENT -->
+                       <!-- INTERVIW -->
+                       <div id="pg-interview">
+                       <div class="title-ill about-logo"><img src="images/logo-big.png" alt=""></div>
+                       <h2>masthead</h2>
+                       <p><a href="mailto:info@tinyatlasquarterly.com">info@tinyatlasquarterly.com</a><br>
+                       <a href="http://tinyatlasquarterly.com">tinyatlasquarterly.com</a><br>
+                       Instagram <a href="https://www.instagram.com/tinyatlasquarterly/">@tinyatlasquarterly</a> <a href="https://www.instagram.com/explore/tags/mytinyatlas/">#mytinyatlas</a><br>
+                       twitter <a href="https://twitter.com/TinyAtlasQtrly">@tinyatlasqtrly</a></p>
+                       <h3>FOUNDER/PUBLISHER/CREATIVE DIRECTOR</h3>
+                       <p><a href="mailto:emily@tinyatlasquarterly.com">Emily Nathan</a></p>
+                       <h3>DIRECTOR OF USER EXPERIENCE</h3>
+                       <p><a href="mailto:jake@myrobothand.com">Jake Huffman</a></p>
+                       <h3>DEVELOPER/LEAD DIGITAL DESIGNER</h3>
+                       <p><a href="https://www.alexgennette.com">Alex Gennette</a></p>
+                       <h3>BRAND CREATIVE DIRECTOR</h3>
+                       <p><a href="http://studiosloan.com">Mark Sloan</a></p>
+                       <h3>PHOTO DIRECTOR</h3>
+                       <p><a href="mailto:deb@tinyatlasquarterly.com">Deb Hearey</a></p>
+                       <h3>MANAGING EDITOR</h3>
+                       <p><a href="mailto:flora@tinyatlasquarterly.com">Flora Tsapovsky</a></p>
+                       <h3>ARTS EDITOR</h3>
+                       <p><a href="http://www.cultexhibitions.com"></a>Aimee Friberg</p>
+                       <h3>FOUNDING DESIGN DIRECTOR</h3>
+                       <p><a href="http://lionsandtigersco.com/">Liz Mullally</a></p>
+                       <h3>PRODUCTION ASSISTANTS</h3>
+                       <p>Bianca Tummings<br>
+                       Lindsey Adams<br>
+                       Nicole Elliott</p>
+                       <h3>CITY COVER ILLUSTRATION</h3>
+                       <p><a href="http://wwww.olaniepsuj.com">Ola Niepsuj</a></p>
+                       <h3>CITY COVER PHOTO</h3>
+                       <p><a href="http://www.emilynathan.com">Emily Nathan</a></p>
+                       <h3>MASTHEAD PHOTO</h3>
+                       <p><a href="http://gabrielrobertflores.tumblr.com">Gabriel Flores</a></p>
+                       <h3>ABOUT PHOTO</h3>
+                       <p><a href="http://www.emilyshur.com">Emily Shur</a></p>
+                       <h3>EDITOR'S LETTER PHOTO</h3>
+                       <p><a href="mailto:nicolefranzen@gmail.com">Nicole Franzen</a></p>
+                       <h3>CONTRIBUTING ILLUSTRATORS/DESIGNERS</h3>
+                       <p><a href="http://jimmezei.com">Jim Mezei</a><br>
+                       <a href="https://www.linkedin.com/in/sharon-matas-9a8ab04a/">Sharon Matas</a><br>
+                       <a href="http://alexhollender.info">Alex Hollender</a><br>
+                       <a href="http://www.lizgardner.co">Liz Gardner</a><br>
+                       <a href="mailto:locksin2309@gmail.com">Locksin Chong</a><br>
+                       <a href="http://studiosloan.com">Mark Sloan</a><br>
+                       <a href="http://www.lizzievaughan.com">Lizzie Vaughan</a><br>
+                       <a href="http://www.oregon-girl.com">Holly Schnackenberg</a></p>
+                       <h3>FEATURE  PHOTOGRAPHERS</h3>
+                       <p><a href="http://www.emilynathan.com">Emily Nathan</a><br>
+                       <a href="http://gabrielrobertflores.tumblr.com">Gabriel Flores</a><br>
+                       <a href="http://www.christarenee.com">Christa Renee</a><br>
+                       <a href="https://www.linkedin.com/in/liah-chesnokov-4788263/">Liah Chesnokov</a><br>
+                       <a href="http://www.emilyshur.com">Emily Shur</a><br>
+                       <a href="http://www.daejafallas.com">Daeja Fallas</a><br>
+                       <a href="http://www.erinkunkel.com">Erin Kunkel</a><br>
+                       <a href="http://www.ashleycamper.com">Ashley Camper</a></p>
+                       <h3>CONTRIBUTING WRITERS</h3>
+                       <p><a href="https://www.linkedin.com/in/francisca-rojas-043893/">Francisca Rojas</a><br>
+                       <a href="http://www.emilyknathan.com">Emily K Nathan</a><br>
+                       <a href="http://www.emilyknathan.com">Flora Tsapovsky</a></p>
+                       <h3>PRESS INQUIRIES &amp; AD SALES</h3>
+                       <p><a href="mailto:jill@tinyatlasquarterly.com">Jill Hudes Lindenbaum</a></p>
                        </div>
+                  </div><!--END INTERVIEW -->
+               </div> <!-- END BOX -->
 
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Founding Design Director
-                       </span>
-                       <br />
-                       <a href="mailto:liz@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Liz Mullally
-                       </a>
-                       </div>
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 01 ------------------------------------------------------------->
 
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Director of User Experience
-                       </span>
-                       <br />
-                       <a href="mailto:jake@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Jake Huffman
-                       </a>
-                       </div>
+<!-- PAGE 0 ------------------------------------------------------------->
 
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Photo Editor
-                       </span>
-                       <br />
-                       <a href="mailto:deb@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Deb Hearey
-                       </a>
-                       </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Managing Editor
-                       </span>
-                       <br />
-                       <a href="mailto:Diana@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Diana Mulvihill
-                       </a>
-                       </div>
-
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Editor-at-Large
-                       </span>
-                       <br />
-                       <a href="mailto:jill@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Jill Lindenbaum
-                       </a>
-                       </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Executive Editor
-                       </span>
-                       <br />
-                       <a href="mailto:Jennifer@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Jennifer Rodrigue
-                       </a>
-                       </div>
-
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Contributing Editor
-                       </span>
-                       <br />
-                       <a href="mailto:marion@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Marion Bretange
-                       </a>
-                       </div>
-
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Arts Editor
-                       </span>
-                       <br />
-                       <a href="mailto:aimee@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Aimee Friberg
-                       </a>
-                       </div>
-
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Digital Designer
-                       </span>
-                       <br />
-                       <a href="http://www.alexgennette.com" target="_blank">
-                       Alex Gennette
-                       </a>
-                       </div>
-
-                       <!--
-                       <div class="pg-credits-box"><span style="text-transform:uppercase"> Assistant Editor </span> <br>
-                       <a href="mailto:laura@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly"> Theresa Christine </a></div>
-                       -->
-
-                     <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Production Assistants
-                       </span><br />
-                       Kate Allbee
-                       <br />Yasmine Diba
-                       </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box"><span style="text-transform:uppercase"> West Coast Cover Illustration</span> <br>
-                       <a href="http://www.desertretreater.com" target="_blank">Sean Spellman</a></div>
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">Masthead Photo </span>
-                       <br><a href="http://collinerie.com" target="_blank">Collin Erie</a>
-                       </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">Editor's Letter Photo </span>
-                       <br><a href="http://kerrymurray.com" target="_blank">Kerry Murray</a>
-                       </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase"> West Coast Cover Photo </span>
-                       <br><a href="http://kerrymurray.com" target="_blank">Kerry Murray</a>
-                       </div>
-
-                       <!-- CONTRIBUTORS ------------>
-
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Contributing Artists/Designers</span>
-                       <br /><a href="http://studiosloan.com" target="_blank">Mark Sloan</a>
-                       <br /><a href="http://www.myrobothand.com" target="_blank">Jake Huffman</a>
-                       <br /><a href="http://www.lizzievaughan.com" target="_blank">Lizzie Hunter Vaughan</a>
-                       <br /><a href="http://bethabrahamson.com" target="_blank">Beth Abrahamson</a>
-                       <br />Kate Allbee
-                       <br /><a href="http://www.maximrie.com/www.maximrie.com/M_A_X_I_M_I_L_I_A_N_I_M_R_I_E.html" target="_blank">Max Imrie</a>
-                       </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box pg-credits-box-break">
-                       <span style="text-transform:uppercase">
-                       Feature Photographers</span>
-                       <br /><a href="http://www.emilynathan.com" target="_blank">Emily Nathan</a>
-                       <br /><a href="http://www.tysonwheatley.com/" target="_blank">Tyson Wheatley</a>
-                       <br /><a href="https://www.instagram.com/dantom/?hl=en" target="_blank">Dan Tom</a>
-                       <br /><a href="http://www.maximrie.com/www.maximrie.com/M_A_X_I_M_I_L_I_A_N_I_M_R_I_E.html" target="_blank">Max Imrie</a>
-                       <br /><a href="http://www.ashleycamper.com" target="_blank">Ashley Camper</a>
-                       <br /><a href="http://www.amandamarsalis.com/" target="_blank">Amanda Marsalis</a>
-                       <br /><a href="http://www.ashleycamper.com" target="_blank">Helena Price</a>
-                       <br /><a href="http://gabrielrobertflores.tumblr.com" target="_blank">Gabriel Flores</a>
-                       <br /><a href="http://www.seanryanpierce.com" target="_blank">Sean R Pierce</a>
-
-                        <br /><br /><em>Portraits and Place</em>
-                        <br /><a href="http://www.dianakoenigsberg.com" target="_blank">Diana Koenigsberg</a>
-                        <br /><a href="http://collinerie.com" target="_blank">Collin Erie</a>
-                        <br /><a href="http://kerrymurray.com" target="_blank">Kerry Murray</a>
-                        <br /><a href="http://www.caydiemccumber.com" target="_blank">Caydie McCumber</a>
-                        <br /><a href="http://www.nicolefranzen.com/" target="_blank">Nicole Franzen</a>
-                        <br /><a href="http://www.abbyross.com" target="_blank">Abby Ross</a>
-                        <br /><a href="http://www.jessicasample.com" target="_blank">Jessica Sample</a>
-                        <br /><a href="http://rickyrhodes.com" target="_blank">Ricky Rhodes</a>
-                        <br /><a href="http://www.ayabrackett.com" target="_blank">Aya Brackett</a>
-                        <br /><a href="http://www.saltywings.com.au" target="_blank">Salty Wings</a>
-                        <br /><a href="http://www.mariannajamadi.com" target="_blank">Marianna Jamadi</a>
-                        <br /><a href="http://www.cdelosangelesphoto.com" target="_blank">Carlos de los Angeles</a>
-                        <br /><a href="http://thayerphoto.com" target="_blank">Thayer Gowdy</a>
-                        <br /><a href="http://www.darcyrogers.com" target="_blank">Darcy Rogers</a>
-                        <br /><a href="http://www.delriophotography.com" target="_blank">Maria del Rio</a>
-                        <br /><a href="http://www.lanecoder.com" target="_blank">Lane Coder</a>
-                        <br /><a href="http://www.moneal.com" target="_blank">Michael O’Neal</a>
-                        <br /><a href="http://jensiska.com" target="_blank">Jen Siska</a>
-                        <br /><a href="http://www.melissakaseman.com" target="_blank">Melissa Kaseman</a>
-                        <br /><a href="http://www.meghaywoodsullivan.com" target="_blank">Meg Haywood-Sullivan</a>
-                        <br /><a href="http://loumora.com" target="_blank">Lou Mora</a>
-
-                        <br /><br /><em>Contributing Writers</em>
-                        <br /><a href="http://www.maximrie.com/www.maximrie.com/M_A_X_I_M_I_L_I_A_N_I_M_R_I_E.html" target="_blank">Max Imrie</a>
-                        <br /><a href="http://emilyanthan.com" target="_blank">Emily Nathan</a>
-                        <br /><a href="http://www.amandamarsalis.com/" target="_blank">Amanda Marsalis</a>
-                        <br /><a href="http://www.tysonwheatley.com/" target="_blank">Tyson Wheatley</a>
-                       </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Press Inquiries
-                       </span>
-                       <br />
-                       <a href="mailto:jill@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Jill Hudes Lindenbaum
-                       </a>
-                       </div>
-
-                       <!--  -->
-                       <div class="pg-credits-box">
-                       <span style="text-transform:uppercase">
-                       Ad Sales
-                       </span>
-                       <br />
-                       <a href="mailto:Olivia@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
-                       Olivia La Roche
-                       </a>
-                       </div>
-
-                   </div><!-- end page content -->
-               </div> <!-- end box div -->
-           </div><!-- end wrapper div -->
-           </div>
-          <!-- END PAGE 23 ------------------------------------------------------------->
-
-          <!-- PAGE 0 ------------------------------------------------------------->
-        	<!-- wrapper div -->
-            <div id="page-zero" class="pg-page">
-            <div class="pg-wrapper">
-               <!-- image -->
-               <img src="../images/blank.png" />
-           </div><!-- end wrapper div -->
-           		<!-- NAV -->
-          		<div id="nav-holder"><div id="nav"><a href="../index.html"><img src="../images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></a></div></div>
-           </div>
           <!-- END PAGE 0 ------------------------------------------------------------->
+
+        <script type="text/javascript" src="../js/hammer.min.js"></script>
         <script>
 
-        <!-------------------- THE GOOGLE --------------------->
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-39716054-1']);
 		  _gaq.push(['_trackPageview']);

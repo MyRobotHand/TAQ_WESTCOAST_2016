@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tiny Atlas Quarterly | Paris, France</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../css/features.css" />
+    <link rel="shortcut icon" href="../images/favicon.png">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.transit.js"></script>
+
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="../js/picturefill.2.1.0.js" async></script>
+
+    <script src="../js/sil.js"></script>
+
+    <script>
+        $(window).load(function() {
+            //This is where you could start a loading animation.
+
+            //Then start loading the images.
+            $.preloadImages({
+                StepCallback: function(CurrentImage, TotalImages, LoadedElement, LoadTime) {
+                    console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+                    //This is where you could update some sort of progress indicator.
+                },
+
+                DoneCallback: function() {
+                    console.log("Done loading the images.");
+
+                    //This is where you could stop the loading animation.
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#page1").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-buttons").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-holder").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+        });
+    </script>
+
+    <style media="screen">
+        #page1 .pg-upper-right-caption {
+            top: 5vh;
+        }
+    </style>
+
+</head>
+
+
+<body id="taqPage">
+
+    <!-- PAGE NAVIGATION ------------------------------------------------------------->
+    <div id="nav-buttons" class="pg-nav"><span class="pg-prev" id="pg-pageDown"></span><span class="pg-next" id="pg-pageUp"></span></div>
+    <div style="display:none;">
+        <img src="../images/arrow_next.png">
+        <img src="../images/arrow_prev.png">
+        <img src="../images/blank-L.png">
+        <img src="../images/blank-S.png">
+        <img src="../images/tiny-atlas-sm.jpg">
+    </div>
+
+    <!-- PAGE 01 ------------------------------------------------------------->
+    <div id="page1" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/01_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/01_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/01_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-box-intro">
+
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <div class="title-ill"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/paris-title.png" alt="" style="max-width:278px;"></div>
+                        <h3>Photography by: Christa Renee<br />
+                         Written by: Emily K Nathan<br />
+                         Title Illustration by: Holly Schnackenberg<br />
+                         Food Illustrations by: Sharon Matas</h3>
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 01 ------------------------------------------------------------->
+
+    <!-- PAGE 02 ------------------------------------------------------------->
+    <div id="page2" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/02_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/02_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/02_Paris_girls_Christa_Renee_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/02_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 02 ------------------------------------------------------------->
+
+    <!-- PAGE 03 ------------------------------------------------------------->
+    <div id="page3" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/03_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/03_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/03_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 03 ------------------------------------------------------------->
+
+    <!-- PAGE 04 ------------------------------------------------------------->
+    <div id="page4" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/04_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/04_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/04_Paris_girls_Christa_Renee_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/04_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+                 <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+            <!-- CAPTION -->
+            <!-- LEFT CAPTION -->
+            <div class="pg-box-content">
+                <!-- CONTENT -->
+                <!-- INTERVIW -->
+                <div id="pg-interview">
+                    <img src="images/Paris-Baguette.jpg" alt="" class="ill-small">
+                    <h2 class="with-ill-small">Paris</h2>
+                    <p>With its cobblestone streets, flower shops and chocolateries, it might seem that Paris was built to satisfy the romantic yearnings in every girl's heart. It is a city of magic, where the sun rises over sandy facades and secret gardens
+                        and sets in the Seine, its light bathing the world in a dusty glow. In Paris, no treat is too sinful, not even on a workday; it's a place for long, leisurely strolls, impromptu dips into the theatre for a classic film, and evening
+                        trips to the Turkish baths — a place where every day deserves a morning pain au chocolat, an afternoon tea and a night cap to boot.</p>
+                    <p>Whether you're picnicking in any of the city's verdant parks, gallery hopping the Marais, or wining and dining on steak frites and Kir Royal with views over the river, a Parisian sojourn will charm even the toughest cynic.</p>
+                </div>
+            </div>
+            <!--END INTERVIEW -->
+        </div>
+        <!-- END BOX -->
+
+    </div>
+    <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 04 ------------------------------------------------------------->
+
+    <!-- PAGE 05 ------------------------------------------------------------->
+    <div id="page5" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/05_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/05_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/05_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 05 ------------------------------------------------------------->
+
+    <!-- PAGE 06 ------------------------------------------------------------->
+    <div id="page6" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/06_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/06_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/06_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 06 ------------------------------------------------------------->
+
+    <!-- PAGE 07 ------------------------------------------------------------->
+    <div id="page7" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/07_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/07_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/07_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 07 ------------------------------------------------------------->
+
+    <!-- PAGE 08 ------------------------------------------------------------->
+    <div id="page8" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/08_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/08_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/08_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 08 ------------------------------------------------------------->
+
+    <!-- PAGE 09 ------------------------------------------------------------->
+    <div id="page9" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/09_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/09_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/09_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 09 ------------------------------------------------------------->
+
+    <!-- PAGE 10 ------------------------------------------------------------->
+    <div id="page10" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/10_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/10_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/10_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 10 ------------------------------------------------------------->
+
+    <!-- PAGE 11 ------------------------------------------------------------->
+    <div id="page11" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/11_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/11_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/11_Paris_girls_Christa_Renee_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/11_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+                 <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+            <!-- CAPTION -->
+            <!-- LEFT CAPTION -->
+            <div class="pg-box-content">
+                <!-- CONTENT -->
+                <!-- INTERVIW -->
+                <div id="pg-interview">
+                    <img src="images/Paris-Pastries.jpg" alt="" class="ill-small">
+                    <h2 class="with-ill-small">A Buttery Breakfast: Morning Rituals</h2>
+                    <p>Why make breakfast at home when every city block is a smörgasboard of the world's most luscious delights? From your quaint hotel room in the 10th arrondissement, today's haven for hipster cafes and low-key modern bistros, take a stroll
+                        toward the Canal Saint Martin and pick up a cafe crème à emporter (to go) from Ten Belles. Don't drink it all in one sip — it must be saved for a taste of heaven at La Boulangerie Des Pains et Des Idées, just across the water.
+                        You'll never find a flakier pain au chocolat, or a richer chausson aux pommes.</p>
+                </div>
+            </div>
+            <!--END INTERVIEW -->
+        </div>
+        <!-- END BOX -->
+
+
+    </div>
+    <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 11 ------------------------------------------------------------->
+
+    <!-- PAGE 12 ------------------------------------------------------------->
+    <div id="page12" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/12_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/12_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/12_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                      <img src="images/Paris-Brie.jpg" alt="" class="ill-small">
+                        <h2 class="with-ill-small">Culture and Coffee</h2>
+                        <p>Once you've had your dose, stroll past La Place de la République and into the Marais, past the art galleries and clothing boutiques to the Centre Pompidou. The largest-ever retrospective of works by American artist Cy Twombly won't
+                            disappoint, and a quick espresso pick-me-up in the museum's 6th floor Café Panoramique offers stunning aerial views of the city. Culture fix complete, it's time to eat again. Continue through the Marais and wander down the
+                            historic streets of the Jewish quarter, with its Kosher bakeries and falafel sellers. But don't let them entice you: Miznon makes the best lamb kebab sandwich in the city, served with fresh cilantro and herbs in a warm pita.
+                            You'll walk it off on your way toward the Seine River.</p>
+
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 12 ------------------------------------------------------------->
+
+    <!-- PAGE 13 ------------------------------------------------------------->
+    <div id="page13" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/13_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/13_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/13_Paris_girls_Christa_Renee_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/13_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+                 <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+
+            <!-- CAPTION -->
+            <!-- LEFT CAPTION -->
+            <div class="pg-box-content">
+                <!-- CONTENT -->
+                <!-- INTERVIW -->
+                <div id="pg-interview">
+                    <img src="images/Paris-Icecream.jpg" alt="" class="ill-small">
+                    <h2 class="with-ill-small">Relax and Repose</h2>
+                    <p>Crossing the Pont Marie bridge will take you to the narrow streets of the Île Saint-Louis, home of Berthillon, the grand-dame of French ice cream. Don't mind the line; it's worth the wait. Next stop is La Mosquée de Paris, located
+                        in the heart of the Latin Quarter, for a Moroccan mint tea and a relaxing Hammam: take a dip in the Turkish baths or just enjoy a steam. When you're ready to meet the world again, head back up the hill past La Pantheon and down
+                        to the stunning Luxembourg Gardens, which have inspired the likes of Claude Monet and Ernest Hemingway. Before you go in, grab picnic treats at La Coopérative laitiere du Beaufortain, where they offer farmer cheeses, charcuterie,
+                        and jams — as well as bottles of wine. On sunny days, the garden can be crowded, but once you've found your spot on the grass it's yours for hours. Reclining lawn chairs placed around the large central fountain are just the ticket
+                        for a cat-nap.</p>
+
+                </div>
+            </div>
+            <!--END INTERVIEW -->
+        </div>
+        <!-- END BOX -->
+
+    </div>
+    <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 13 ------------------------------------------------------------->
+
+    <!-- PAGE 14 ------------------------------------------------------------->
+    <div id="page14" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/14_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/14_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/14_Paris_girls_Christa_Renee_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/14_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+
+                        <!-- BOX  INTERVIEW-->
+                             <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+
+            <!-- CAPTION -->
+            <!-- LEFT CAPTION -->
+            <div class="pg-box-content">
+                <!-- CONTENT -->
+                <!-- INTERVIW -->
+                <div id="pg-interview">
+                  <img src="images/Paris-Apricots.jpg" alt="" class="ill-small">
+                    <h2 class="with-ill-small">Just the Classics</h2>
+                    <p>As the sun sets, you can leave the garden on the Northwestern corner and hit the Rue de Rennes for some of the city's best shopping. Don't miss the chic Bon Marché, the world's oldest department store, housed in a gorgeous Art Nouveau
+                        building featuring ironwork by Gustave Eiffel. For dinner, armed with all your purchases, you won't want to go far: La Rotonde Montparnasse is a French classic. Start with foie gras and escargots in herbed butter, and finish the
+                        meal with a Tarte Tatin. Sweet and rich, served with a dollop of crème fraiche, it's the fitting end to a perfect Parisian day.</p>
+
+                </div>
+            </div>
+            <!--END INTERVIEW -->
+        </div>
+        <!-- END BOX -->
+
+
+    </div>
+    <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 14 ------------------------------------------------------------->
+
+    <!-- PAGE 15 ------------------------------------------------------------->
+    <div id="page15" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/15_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/15_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/15_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 15 ------------------------------------------------------------->
+
+    <!-- PAGE 16 ------------------------------------------------------------->
+    <div id="page16" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/16_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/16_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/16_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 16 ------------------------------------------------------------->
+
+    <!-- PAGE 17 ------------------------------------------------------------->
+    <div id="page17" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/17_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/17_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/17_Paris_girls_Christa_Renee_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/17_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 17 ------------------------------------------------------------->
+
+    <!-- PAGE 18 ------------------------------------------------------------->
+    <div id="page18" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/18_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/18_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/18_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 18 ------------------------------------------------------------->
+
+    <!-- PAGE 19 ------------------------------------------------------------->
+    <div id="page19" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/19_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/19_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/19_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 19 ------------------------------------------------------------->
+
+    <!-- PAGE 20 ------------------------------------------------------------->
+    <div id="page20" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/20_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/20_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/20_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 20 ------------------------------------------------------------->
+
+    <!-- PAGE 21 ------------------------------------------------------------->
+    <div id="page21" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/21_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/21_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/21_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 21 ------------------------------------------------------------->
+
+    <!-- PAGE 22 ------------------------------------------------------------->
+    <div id="page22" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/22_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/22_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/22_Paris_girls_Christa_Renee_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/22_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 22 ------------------------------------------------------------->
+
+    <!-- PAGE 23 ------------------------------------------------------------->
+    <div id="page23" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/23_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/23_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/23_Paris_girls_Christa_Renee_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/23_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+                 <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+            <!-- CAPTION -->
+            <!-- LEFT CAPTION -->
+            <div class="pg-box-content">
+                <!-- CONTENT -->
+                <!-- INTERVIW -->
+                <div id="pg-interview">
+                    <img src="images/Paris-Radishes.jpg" alt="" class="ill-small">
+                    <h2 class="with-ill-small">Resources</h2>
+
+                    <h4>Eat:</h4>
+
+                    <a href="http://www.tenbelles.com/"><h5>Ten Belles</h5></a>
+                    <p>High-quality coffee bar and cafe along the Canal Saint Martin, selling home-baked  pastries and sandwiches.</p>
+
+                    <a href="https://dupainetdesidees.com/en/"><h5>Boulangerie des Pains et des Idées</h5></a>
+                    <p>Open exclusively on weekdays, come for Escargots à la pistache and petit pain rolls.</p>
+
+                    <a href="https://www.facebook.com/miznonparis/"><h5>Miznon</h5></a>
+                    <p>The Parisian outpost of Israeli chef Eyal Shani’s Tel Aviv restaurant serves the best lamb-kebab pita in the city.</p>
+
+                    <a href="http://www.berthillon.fr/"><h5>Berthillon</h5></a>
+                    <p>Unanimously considered the best homemade, small batch ice-cream in Paris.</p>
+
+                    <a href="https://www.cooperative-de-beaufort.com/"><h5>La Coopérative Laitiere du Beaufortain</h5></a>
+                    <p>This farmer-cooperative-run shop is a haven for cheese and charcuterie lovers.</p>
+
+                    <a href="http://www.rotondemontparnasse.com/"><h5>La Rotonde</h5></a>
+                    <p>Cozy Latin Quarter bistro historically visited by the likes of Picasso, Hemingway and Matisse, known for its traditional French cuisine.</p>
+
+                    <h4>Stay:</h4>
+
+                    <a href="http://www.le5codet.com/en/"><h5>Le Cinq Codet</h5></a>
+                    <p>Located a short walk from Les Invalides in the 7th arrondissement, the chic 5-star hotel has 67 loft-like rooms with New Nordic touches.</p>
+
+                    <a href="http://hotelpanache.com/en/"><h5>Hotel Panache</h5></a>
+                    <p>A 3-star hotel in the hip 10th arrondissement with quirky Parisian charm and art-deco furnishings and retro touches.</p>
+
+                    <a href="http://www.mamashelter.com/en/paris/"><h5>Mama Shelter Paris</h5></a>
+                    <p>Young, affordable and designed by Philippe Starck, this casual hotel features a pizzeria and a rooftop bar.</p>
+
+                    <h4>Do:</h4>
+
+                    <a href="https://www.centrepompidou.fr/en"><h5>Centre Pompidou</h5></a>
+                    <p>The city's boldest center for contemporary art and design, housed in a striking building designed by Italian architect Renzo Piano.</p>
+
+                    <h5>Rue de Rennes</h5>
+                    <p>A wide, bustling street in the heart of the Latin Quarter, chockablock with boutiques, antique and jewelry shops.</p>
+
+                    <a href="http://www.mosqueedeparis.net/"><h5>La Mosquée de Paris</h5></a>
+                    <p>One of the largest mosques in France, serving authentic Moroccan treats on a tiled terrace and featuring traditional Hammam baths.</p>
+
+                    <a href="http://www.french-gardens.com/gardens/jardindeluxembourg.php"><h5>The Luxembourg Gardens</h5></a>
+                    <p>Expanses, fountains, and sculpture gardens offer a peaceful oasis from city life.</p>
+
+
+                </div>
+            </div>
+            <!--END INTERVIEW -->
+        </div>
+        <!-- END BOX -->
+
+
+
+    </div>
+    <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 23 ------------------------------------------------------------->
+
+    <!-- PAGE 24 ------------------------------------------------------------->
+    <div id="page24" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/24_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/24_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/24_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 24 ------------------------------------------------------------->
+
+    <!-- PAGE 25 ------------------------------------------------------------->
+    <div id="page25" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/25_Paris_girls_Christa_Renee_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/25_Paris_girls_Christa_Renee_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/25_Paris_girls_Christa_Renee_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Paris, Christa Renee">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 25 ------------------------------------------------------------->
+
+    <!-- PAGE 0 ------------------------------------------------------------->
+    <!-- wrapper div -->
+    <div id="page-zero" class="pg-page">
+        <div class="pg-wrapper">
+            <!-- image -->
+            <img src="../images/blank-L.png" />
+        </div>
+        <!-- end wrapper div -->
+        <!-- NAV -->
+        <div id="nav-holder">
+            <div id="nav">
+                <a href="../index.html"><img src="../images/back-arrow.svg" alt="" class="back-arrow"><img src="../images/feature-logo.png" alt="Tiny Atlas Quarterly" class="crest"></a>
+                <div class="title">
+                    <span class="issue">City 2O17</span><br>
+                    <span class="feature">Paris</span>
+                </div>
+                <div class="feature-links">
+                  <span id="pageLink"><a href="#page23">Resources</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END PAGE 0 ------------------------------------------------------------->
+
+    <script type="text/javascript" src="../js/hammer.min.js"></script>
+    <script>
+        //----------------- SLIDE SHOW ------------------------------//
+        var pgPages = new Array("page1",
+            "page2",
+            "page3",
+            "page5",
+            "page4",
+            "page6",
+            "page7",
+            "page8",
+            "page9",
+            "page10",
+            "page11",
+            "page12",
+            "page13",
+            "page14",
+            "page15",
+            "page16",
+            "page17",
+            "page18",
+            "page19",
+            "page20",
+            "page21",
+            "page22",
+            "page23",
+            "page24",
+            "page25");
+        var pageCount = 0;
+        var pageNext;
+        $('#pg-pageUp').on('click', function() {
+            pageUp();
+        });
+
+        $('#pg-pageDown').on('click', function() {
+            pageDown();
+        });
+
+        //------ START UP DOWN ------//
+        function pageUp() {
+            if (pageCount == (pgPages.length - 1)) {
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                pageCount = 0;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+            } else {
+                pageNext = pageCount + 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount++;
+            }
+        }
+
+        function pageDown() {
+            if (pageCount == 0) {
+                $("#" + pgPages[0]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }); // OUT
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount = pgPages.length - 1;
+            } else {
+                pageNext = pageCount - 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount--;
+            }
+        }
+        //------ END UP DOWN ------//
+
+        //------ Resources Linking ------//
+        $('#pageLink').on('click', function() {
+            pageLink();
+        });
+
+        function pageLink(){
+          $("#" + pgPages[pageCount]).velocity({
+              opacity: 0
+          }, {
+              display: "none"
+          }, {
+              duration: 1000
+          }, "easeInOutQuint"); // OUT
+          $("#page23").velocity({
+              opacity: 1
+          }, {
+              display: "block"
+          }, {
+              duration: 1000
+          }, "easeInOutQuint"); // IN
+          pageCount = 22;
+          pageNext = 22;
+        }
+
+
+        // TOUCH HANDLERS
+        var myElement = document.getElementById('taqPage');
+        var mc = new Hammer(myElement);
+
+        // listen to events...
+        mc.on("swipeleft", function() {
+            pageUp();
+        });
+        mc.on("swiperight", function() {
+            pageDown();
+        });
+        //----------------- END SLIDE SHOW -----------------//
+
+
+        //------------------ NAV WIDTH -----------------//
+
+
+
+        //------------------ THE GOOGLE --------------------//
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39716054-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tiny Atlas Quarterly | Havana, Cuba</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../css/features.css" />
+    <link rel="shortcut icon" href="../images/favicon.png">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.transit.js"></script>
+
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="../js/picturefill.2.1.0.js" async></script>
+
+    <script src="../js/sil.js"></script>
+
+    <script>
+        $(window).load(function() {
+            //This is where you could start a loading animation.
+
+            //Then start loading the images.
+            $.preloadImages({
+                StepCallback: function(CurrentImage, TotalImages, LoadedElement, LoadTime) {
+                    console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+                    //This is where you could update some sort of progress indicator.
+                },
+
+                DoneCallback: function() {
+                    console.log("Done loading the images.");
+
+                    //This is where you could stop the loading animation.
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#page1").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-buttons").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-holder").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+        });
+    </script>
+
+</head>
+
+
+<body id="taqPage">
+
+    <!-- PAGE NAVIGATION ------------------------------------------------------------->
+    <div id="nav-buttons" class="pg-nav"><span class="pg-prev" id="pg-pageDown"></span><span class="pg-next" id="pg-pageUp"></span></div>
+    <div style="display:none;">
+        <img src="../images/arrow_next.png">
+        <img src="../images/arrow_prev.png">
+        <img src="../images/blank-L.png">
+        <img src="../images/blank-S.png">
+        <img src="../images/tiny-atlas-sm.jpg">
+    </div>
+
+    <!-- PAGE 01 ------------------------------------------------------------->
+    <div id="page1" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/01_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/01_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/01_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/01_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-box-intro">
+
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <div class="title-ill"><img src="images/havana-title-illo.png" alt="" style="max-width:278px;"></div>
+                        <h3>Photography by: Gabriel Flores<br />
+                         Written by: Gabriel Flores<br />
+                         Title Illustration by: Mark Sloan</h3>
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 01 ------------------------------------------------------------->
+
+    <!-- PAGE 02 ------------------------------------------------------------->
+    <div id="page2" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/02_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/02_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/02_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 02 ------------------------------------------------------------->
+
+    <!-- PAGE 03 ------------------------------------------------------------->
+    <div id="page3" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/03_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/03_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/03_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/03_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <h2>Havana</h2>
+                        <p>I returned home from Cuba with a small bottle of 7 year rum, a half-smoked pack of Hollywood cigarettes and a few hand-thrown clay mugs from a local potter (to house the rum of course). These souvenirs embody what were possibly
+                            the most lively five days of my life, in a city I’ve always dreamt of visiting. What I found most inspiring about my days in Cuba were those late afternoons walking around the city, feeling immersed in everyday Havana, the
+                            sun piercing through the calles, children playing soccer around every crumbling corner, and the lingering thread of music, lacing through my steps from windows and passing cars.</p>
+
+                        <p>My friend Andrew Tyree, who founded the travel initiative Coast to Costa, asked me to join him and his group of 16 strangers on a 5-day trip to Cuba. Andrew ‘s vision and drive for Coast to Costa’s guided trips is one that I can
+                            highly relate to – travel with eagerness, experience the city as locals do and to fully submersing yourself in everything you experience while you’re there. We did nothing short of that.</p>
+
+                        <p>Arriving in Havana I immediately felt the energy radiating from the streets. Like any city, cars and people are bustling at all hours of the day. Abuelas and abuelos are out on their balconies hanging out their laundry. But unlike
+                            any other city I’ve ever visited, there are no banks, no grocery stores and you will very rarely find any internet. When you stop by a fresh coconut vendor, you might end up with an ice cold Crystal beer instead. After just
+                            a day or two the lifestyle sort overcomes you.</p>
+
+                        <p>As vibrant and alive as this country is, it does not always favor tourists. Trying to get somewhere? Be prepared for the car to break down. Getting directions? It’s likely you’ll misunderstand them. Old cars run on makeshift engines,
+                            the architecture that was once art-deco pristine condition is a distant memory. At some point, I just accepted it all. Experiencing Cuba as it is now, at the beginning of what will be some rapid change, gave me this overwhelming
+                            sense of love for the city exactly the way it is.</p>
+
+                        <p>Brandon, a friend and also one of the guides for Coast to Costa, told me while walking around taking photos; “the thing you’ll quickly realize is that everyone here is an entrepreneur.” During the day you can often find someone
+                            selling coconuts out of a small trailer cart or ice cream out of an ice chest strapped to the back of their bicycle. If you walk down the street, a guy may come up and say he saved your life from passing cars and request a
+                            CUP (Cuban Convertible Peso), and you might just have to give in. While wandering around a few streets just after dark one night I noticed how quickly you could buy a plate of food, candy or something to drink right out of
+                            someone’s front window. This culture survives off of so little and a little goes a long way.</p>
+
+                        <p>We stayed in a casa particular, a private apartment in a multi-level building in Old Havana. From the outside, the building looked shabby and in disrepair, but inside, beautiful tiled floors and colorful painted walls dressed with
+                            paintings made for a different impression. The balconies, looking over the busy street below, brought a sense of the outside in. When staying with our host families we quickly became a part of the family, relishing the home
+                            cooked Cuban breakfast, the beauty and the decay in the spaces, and the warmth that we were welcomed with. In Old Havana, whether it is day or night, the energy of the city is palpable. Families hanging around their stoops
+                            conversing with their neighbors. Un hombre viejo smoking a cigar whilst sweeping his steps. A woman carrying home a slab of raw meat with her bare hands from the corner butcher.</p>
+
+                        <p>On our last night, a group of us decided to head over to this old theater. A famous salsa band was playing and we knew it would it would be a night full of dancing. We hailed a couple cars and piled in. With all the windows down,
+                            car radio blaring, we sped down the road along the Malecón.</p>
+                        <p>This was Cuba, in every possible sense.</p>
+
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 03 ------------------------------------------------------------->
+
+    <!-- PAGE 04 ------------------------------------------------------------->
+    <div id="page4" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/04_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/04_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/04_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/04_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 04 ------------------------------------------------------------->
+
+    <!-- PAGE 05 ------------------------------------------------------------->
+    <div id="page5" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/05_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/05_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/05_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 05 ------------------------------------------------------------->
+
+    <!-- PAGE 06 ------------------------------------------------------------->
+    <div id="page6" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/06_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/06_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/06_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/06_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 06 ------------------------------------------------------------->
+
+    <!-- PAGE 07 ------------------------------------------------------------->
+    <div id="page7" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/07_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/07_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/07_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/07_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 07 ------------------------------------------------------------->
+
+    <!-- PAGE 08 ------------------------------------------------------------->
+    <div id="page8" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/08_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/08_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/08_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 08 ------------------------------------------------------------->
+
+    <!-- PAGE 09 ------------------------------------------------------------->
+    <div id="page9" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/09_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/09_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/09_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/09_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 09 ------------------------------------------------------------->
+
+    <!-- PAGE 10 ------------------------------------------------------------->
+    <div id="page10" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/10_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/10_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/10_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/10_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 10 ------------------------------------------------------------->
+
+    <!-- PAGE 11 ------------------------------------------------------------->
+    <div id="page11" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/11_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/11_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/11_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 11 ------------------------------------------------------------->
+
+    <!-- PAGE 12 ------------------------------------------------------------->
+    <div id="page12" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/12_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/12_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/12_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/12_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption">
+
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <h2>Resources</h2>
+
+                        <h4>Eat: </h4>
+
+                        <a href="http://www.laguarida.com/en/"><h5>Paladar La Guardia</h5></a>
+                        <p>A Cuban establishment, serving traditional and adventurous recipes.</p>
+
+                        <a href="https://www.facebook.com/paladardona.eutimia"><h5>Paladar Doña Eutemia</h5></a>
+                        <p>A centrally located, family-owned restaurant serving simple and straightforward Cuban cuisine.</p>
+
+                        <a href="http://www.lahabana.com/guide/museo-del-chocolate/"><h5>Museo del Chocolate</h5></a>
+                        <p>Part museum part coffee shop, the Museo serves addictive cold chocolate drinks.</p>
+
+                        <h4>Stay:</h4>
+
+                        <a href="http://www.casaparticular.com/"><h5>Casas Particulares</h5></a>
+                        <p>The best way to stay in Havana is rent a room in a private family house. Locals must officially to provide the service, and it’s a great way to help families financially and get a glimpse of authentic Cuban life.<a href="http://www.havanacasaparticular.com/">http://www.havanacasaparticular.com/</a></p>
+
+                        <h4>Do:</h4>
+
+                        <a href="http://www.bellasartes.cult.cu/"><h5>Museo Nacional de Bellas Artes</h5></a>
+                        <p>An expansive museum with collections from Spain, ancient Greece and modern-day Cuba.</p>
+
+                        <a href="http://www.hemingwaycuba.com/finca-la-vigia.html"><h5>Museo Hemingway Finca Vigia</h5></a>
+                        <p>An intricate glimpse into the life of Ernest Hemingway, who once adopted Cuba as his home country.</p>
+
+                        <h5>El Malecon</h5>
+                        <p>Havana’s boardwalk stretches alongside the city, offering a gallery of faces, sounds and images.</p>
+
+                        <a href="http://www.coasttocosta.com "><h5>Coast to Coasta</h5></a>
+                        <a href="http://www.intrepidtravel.com"><h5>Intrepid Travel</h5></a>
+                        <a href="http://www.elcamino.travel"><h5>El Camino</h5></a>
+                        <p>There are some excellent options for personalized, guided small group trips to Cuba if you don’t want to figure out logistics yourself.</p>
+
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 12 ------------------------------------------------------------->
+
+    <!-- PAGE 13 ------------------------------------------------------------->
+    <div id="page13" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/13_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/13_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/13_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 13 ------------------------------------------------------------->
+
+    <!-- PAGE 14 ------------------------------------------------------------->
+    <div id="page14" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/14_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/14_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/14_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 14 ------------------------------------------------------------->
+
+    <!-- PAGE 15 ------------------------------------------------------------->
+    <div id="page15" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/15_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/15_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/15_Havana_Gabriel_Flores_Coast_to_Coasta_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Havana, Gabriel Flores">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 15 ------------------------------------------------------------->
+
+    <!-- PAGE 0 ------------------------------------------------------------->
+    <!-- wrapper div -->
+    <div id="page-zero" class="pg-page">
+        <div class="pg-wrapper">
+            <!-- image -->
+            <img src="../images/blank-L.png" />
+        </div>
+        <!-- end wrapper div -->
+        <!-- NAV -->
+        <div id="nav-holder">
+            <div id="nav">
+                <a href="../index.html"><img src="../images/back-arrow.svg" alt="" class="back-arrow"><img src="../images/feature-logo.png" alt="Tiny Atlas Quarterly" class="crest"></a>
+                <div class="title">
+                    <span class="issue">City 2O17</span><br>
+                    <span class="feature">Havana</span>
+                </div>
+                <div class="feature-links">
+                  <span id="pageLink"><a href="#page12">Resources</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END PAGE 0 ------------------------------------------------------------->
+
+    <script type="text/javascript" src="../js/hammer.min.js"></script>
+    <script>
+        //----------------- SLIDE SHOW ------------------------------//
+        var pgPages = new Array("page1",
+            "page2",
+            "page3",
+            "page5",
+            "page4",
+            "page6",
+            "page7",
+            "page8",
+            "page9",
+            "page10",
+            "page11",
+            "page12",
+            "page13",
+            "page14",
+            "page15");
+        var pageCount = 0;
+        var pageNext;
+        $('#pg-pageUp').on('click', function() {
+            pageUp();
+        });
+
+        $('#pg-pageDown').on('click', function() {
+            pageDown();
+        });
+
+        //------ START UP DOWN ------//
+        function pageUp() {
+            if (pageCount == (pgPages.length - 1)) {
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                pageCount = 0;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+            } else {
+                pageNext = pageCount + 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount++;
+            }
+        }
+
+        function pageDown() {
+            if (pageCount == 0) {
+                $("#" + pgPages[0]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }); // OUT
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount = pgPages.length - 1;
+            } else {
+                pageNext = pageCount - 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount--;
+            }
+        }
+        //------ END UP DOWN ------//
+
+        //------ Resources Linking ------//
+        $('#pageLink').on('click', function() {
+            pageLink();
+        });
+
+        function pageLink(){
+          $("#" + pgPages[pageCount]).velocity({
+              opacity: 0
+          }, {
+              display: "none"
+          }, {
+              duration: 1000
+          }, "easeInOutQuint"); // OUT
+          $("#page12").velocity({
+              opacity: 1
+          }, {
+              display: "block"
+          }, {
+              duration: 1000
+          }, "easeInOutQuint"); // IN
+          pageCount = 11;
+          pageNext = 11;
+        }
+
+
+        // TOUCH HANDLERS
+        var myElement = document.getElementById('taqPage');
+        var mc = new Hammer(myElement);
+
+        // listen to events...
+        mc.on("swipeleft", function() {
+            pageUp();
+        });
+        mc.on("swiperight", function() {
+            pageDown();
+        });
+        //----------------- END SLIDE SHOW -----------------//
+
+
+        //------------------ NAV WIDTH -----------------//
+
+
+
+        //------------------ THE GOOGLE --------------------//
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39716054-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>

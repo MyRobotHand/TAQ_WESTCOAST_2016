@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Tiny Atlas Quarterly | Masthead &amp; Contributors, West Coast 2016</title>
+        <title>Tiny Atlas Quarterly | About</title>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +9,8 @@
 
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="css/pages-masthead.css" />
-
+        <link rel="stylesheet" type="text/css" href="../css/features.css" />
+        <link rel="stylesheet" type="text/css" href="../css/header.css" />
         <link rel="shortcut icon" href="../images/favicon.png">
 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -24,83 +24,124 @@
 		</script>
 		<script src="../js/picturefill.2.1.0.js" async></script>
 
+        <script src="../js/sil.js"></script>
+
+        <script>
+        $(window).load(function () {
+    		//This is where you could start a loading animation.
+
+    		//Then start loading the images.
+    		$.preloadImages({
+        		StepCallback: function (CurrentImage, TotalImages, LoadedElement, LoadTime) {
+            	console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+            	//This is where you could update some sort of progress indicator.
+        		},
+
+        		DoneCallback: function () {
+            	console.log("Done loading the images.");
+
+            	//This is where you could stop the loading animation.
+        		}
+    		});
+		});
+		</script>
+
         <script type="text/javascript">
 				$(function(){
     				$("#page1").each(function(index) {
 						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
     				});
-
+					$("#nav-buttons").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
 					$("#nav-holder").each(function(index) {
 						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
     				});
 				});
         </script>
+
     </head>
-</head>
 
-<body>
+
+<body id="taqPage">
+
+  <div class="header-container">
+      <div class="header-logo">
+          <a href="../index.html"><img src="../images/TAQ-logo.png" alt="" class="logo"></a>
+      </div>
+      <div class="header-links-container">
+        <span class="header-links list-triangle"><a href="../index.html">Current Issue</a>
+          <ul>
+            <li><a href="editors-letter.html"  class="link-active">Editor's Letter</a></li>
+            <li><a href="masthead.html">Masthead</a></li>
+          </ul>
+        </span>
+        <span class="header-links"><a href="index.html">About</a></span>
+        <span class="header-links list-triangle"><a href="../events/solas/index.html">Events</a>
+          <ul>
+           <li><a href="../events/solas/index.html">SOLAS</a></li>
+           <li><a href="../events/tahiti-tofino/index.html">Tiny Atlas Trips</a></li>
+           <li><a href="../events/leadinghotelsgiveaway/index.html">Giveaway: Leading Hotels</a></li>
+           <li><a href="../events/montauk/index.html">Montauk Show</a></li>
+          </ul>
+        </span>
+        <span class="header-links"><a href="https://tiny-atlas-solas-a-casual-camera-bag-for-photograp.backerkit.com/hosted_preorders" target="_blank">Shop</a>
+        </span>
+      </div>
+  </div>
+
+
             <!-- PAGE NAVIGATION ------------------------------------------------------------->
-            <!--<div class="pg-nav"><span id="pg-pageDown" class="pg-prev"></span><span id="pg-pageUp" class="pg-next"></span></div>-->
-            <div style="display:none;"><img src="../images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></div>
 
-          <!-- PAGE 23 ------------------------------------------------------------->
-        	<!-- wrapper div -->
-			<div id="page1" class="pg-page">
-            <div class="pg-wrapper">
 
-               <!-- IMAGE START -->
-               <picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/letter-tiny-atlas-quarterly-westcoast-kerry-murray-L.jpg" media="(min-width: 960px)">
-                 <source srcset="images/letter-tiny-atlas-quarterly-westcoast-kerry-murray-M.jpg" media="(min-width: 768px)">
-					<!--[if IE 9]></video><![endif]-->
-					<img srcset="images/letter-tiny-atlas-quarterly-westcoast-kerry-murray-S.jpg" alt="Tiny Atlas Quarterly">
-			  </picture>
+            <!-- PAGE 01 ------------------------------------------------------------->
+            <div id="page1" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/Editors-Letter_Nicole_Franzen_Buenos_Aires-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/Editors-Letter_Nicole_Franzen_Buenos_Aires-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/Editors-Letter_Nicole_Franzen_Buenos_Aires-V.jpg" media="(orientation: portrait)">
+                    <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/Editors-Letter_Nicole_Franzen_Buenos_Aires-S.jpg" alt="Tiny Atlas Quarterly, Alto Minho, Emily Nathan">
+                </picture>
                 <!-- IMAGE END -->
 
+                <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
 
-                               <!-- box div -->
-                               <div class="pg-box" id="page1-box">
-                                   <!-- page content -->
-                                   <h1>Looking West</h1>
+                    <!-- CAPTION -->
+                    <!-- LEFT CAPTION -->
+                    <div class="pg-box-content">
+                       <!-- CONTENT -->
+                       <!-- INTERVIW -->
+                       <div id="pg-interview">
+                       <div class="title-ill about-logo"><img src="images/logo-big.png" alt=""></div>
+                       <p>For our City issue, I reached out to Urban Planning Ph.d. Francisca Rojas for an introduction to the fluid, ever-changing concept of cities.</p>
+                       <p>Thank you, Emily Nathan Founder,<br /> Tiny Atlas Quarterly</p>
 
-                                   <p>For this issue of Tiny Atlas Quarterly we wanted to look at the West Coast in a broader context, as in, West Coast of any ocean. We were curious to see, if we reached out to our network of photographers and storytellers with this idea, would we come back with a uniform story?</p>
-                                   <br />
-                                   <p>We did find many visual and lifestyle parallels in our stories and, no-surprise, lots of stunner images of wide-open spaces across five continents. One favorite feature of mine is the personal narrative and photoset by Max Imrie, from his time living with his pregnant girlfriend in Esquibien. Max’s words bring to life the quiet hamlets of Brittany just as vividly and personally as his pictures do, making me dream of summers on France’s western edge.</p>
-                                   <br />
-                                   <p>Nature lovers will similarly be filled with wanderlust while scrolling through Dan Tom’s feature from an extended stay in the Chilean Patagonia in Torres Del Paine National Park. Like so many in his generation, Dan felt it imperative to quit his job for a time and pursue his passions for travel and photography. The myth of the lone explorer is alive and well in the multi-island story from the Faroe Islands by Tyson Wheatley, sheer altitude and verdant waterfalls included with stunning graphics from designer Mark Sloan.</p>
-                                   <br />
-                                   <p>In addition to wide-open spaces abroad, we took a look for the first time at the big cities back home along our own coastline here in California. From San Francisco we came back with a personal vision of a techie and outdoorsy city by photographer (and former startup marketer) Helena Price.  And we have an artist’s Los Angeles from first-time feature director and established photographer, Amanda Marsalis. In addition we are sharing a road-trip to Baja where we travelled from a Chicano San Diego, through a delicious and vibrant Tijuana to the exploding lifestyle and food getaway region, Valle de Guadalupe.</p>
-                                   <br />
-                                   <p>One thing of note about west coasts that we see day in and day out on #mytinyatlas is that people take pictures at precipices overlooking the ocean. A visual trope so common I thought we might look beyond the cliché to find a deeper meaning. Living on the west coast (of anywhere) there is a physical urgency often to get to the coast. And when reach the coast, simply to look out. So much of the West Coast of the world is rough, wild, cliffy, energized by crashing waves. </p>
-                                   <br />
-                                   <p>Cataloged for thousands of years in paintings, and now, many thousands of times a day on social media. We stand before the coast in a type of contemporary worship. But what is it we are worshiping? The smallness of humanity, the power of the ocean? Or is it just the relief of electrolytes blasting our faces and the deliverance of space for self-reflection in our lives? Too often today, our time spent in nature is distorted by our devices. We moderate our experiences with our phones and our wearable tech. To quote Joel Flory (one of the founders of VSCO) from our absorbing interview with him in the Portraits section, “…if you spend too much time face down to your screen, you are going to miss the moments, in life and in pictures”.</p>
-                                   <br />
-                                   <p>As a thematic question, this West Coast issue is our stab of an answer to our own question, is there a global West Coast? We look forward to seeing your version as always on our tag #mytinyatlas.</p>
-                                   <br />
-                                   <p>Emily Nathan</p>
-                                   </div><!-- end page content -->
-                               </div> <!-- end box div -->
+                       <h2>From chaos to home</h2>
+                       <p>Riding on the crowded subway in Buenos Aires this week, I noticed someone's t-shirt declaring; "Istanbul: you call it chaos, I call it home." It struck me as a succinct way of expressing how, over the course of four years. my family and I have become locals in this vast metropolis of 14 million people, with the smells of buttery pastries in the morning and grilled beef in the afternoon. I was on the subway that afternoon because I needed to be in a meeting a few blocks away in a quick ten minutes. I had jumped into a taxi that immediately refused to take me to that part of town. All the streets were blocked because of massive protests. Unfazed, I saw the subway nearby, and even though I hadn't previously been on that line before, a man standing outside the station assured me that my destination was just two stops away. I made it on time. Four years ago, this same situation would have caused me great anxiety, and a very late arrival.</p>
+                       <p>What is that process that transforms you from an outsider to an insider in a city? From perceiving utter chaos to seeing home? As both academic theories and personal experience would tell you, two critical aspects are involved: observing the urban landscape and listening to the people around you. As urban planners, we learned this lesson from Jane Jacobs when, in the 1960s, she resisted Robert Moses' destruction of vibrant New York City neighborhoods by evocatively describing the ‘urban ballet’ of the local community’s ties and rhythms. Urban photographers also intuitively know that their capacity for observation and personal connections is the quality that allows them to capture the spirit of a place, what the Romans called <i>genius loci.</i></p>
+                       <p>In Buenos Aires, the locals advised me that the city's greatest beauty was behind closed doors -- in rooftop gardens, interior patios, alley cafés. They also advised me to always have a Plan B, C and D. These notions shifted my perception of what I initially saw as chaos, like the ubiquitous broken sidewalks, and opened my eyes to the unique patterns and dynamics that make Buenos Aires one of the most beloved cities in the world. You're home when your instincts take over and you know to see beyond the surface and when your eyes and ears are open to capturing the energy emanating from the people and the streets.</p>
+                       <p>Cheers from Buenos Aires,<br /> Francisca Rojas</p>
+                       </div>
+                  </div><!--END INTERVIEW -->
+               </div> <!-- END BOX -->
 
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 01 ------------------------------------------------------------->
 
-           </div><!-- end wrapper div -->
-           </div>
-          <!-- END PAGE 23 ------------------------------------------------------------->
+<!-- PAGE 0 ------------------------------------------------------------->
 
-          <!-- PAGE 0 ------------------------------------------------------------->
-        	<!-- wrapper div -->
-            <div id="page-zero" class="pg-page">
-            <div class="pg-wrapper">
-               <!-- image -->
-               <img src="../images/blank.png" />
-           </div><!-- end wrapper div -->
-           		<!-- NAV -->
-          		<div id="nav-holder"><div id="nav"><a href="../index.html"><img src="../images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></a></div></div>
-           </div>
           <!-- END PAGE 0 ------------------------------------------------------------->
+
+        <script type="text/javascript" src="../js/hammer.min.js"></script>
         <script>
 
-        <!-------------------- THE GOOGLE --------------------->
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-39716054-1']);
 		  _gaq.push(['_trackPageview']);

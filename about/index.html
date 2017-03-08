@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Tiny Atlas Quarterly | Norway</title>
+        <title>Tiny Atlas Quarterly | About</title>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        
+
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="css/pages.css" />
+        <link rel="stylesheet" type="text/css" href="../css/features.css" />
+        <link rel="stylesheet" type="text/css" href="../css/header.css" />
         <link rel="shortcut icon" href="../images/favicon.png">
-        
+
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script type="text/javascript" src="../js/velocity.min.js"></script>
 		<script type="text/javascript" src="../js/jquery.easing.min.js"></script>
@@ -22,9 +23,9 @@
 		document.createElement( "picture" );
 		</script>
 		<script src="../js/picturefill.2.1.0.js" async></script>
-        
+
         <script src="../js/sil.js"></script>
-                
+
         <script>
         $(window).load(function () {
     		//This is where you could start a loading animation.
@@ -33,7 +34,7 @@
     		$.preloadImages({
         		StepCallback: function (CurrentImage, TotalImages, LoadedElement, LoadTime) {
             	console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
-				
+
             	//This is where you could update some sort of progress indicator.
         		},
 
@@ -41,14 +42,17 @@
             	console.log("Done loading the images.");
 
             	//This is where you could stop the loading animation.
-        		}	
+        		}
     		});
 		});
 		</script>
-        
-        <script type="text/javascript">		
+
+        <script type="text/javascript">
 				$(function(){
     				$("#page1").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
+					$("#nav-buttons").each(function(index) {
 						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
     				});
 					$("#nav-holder").each(function(index) {
@@ -62,71 +66,84 @@
 
 <body id="taqPage">
 
+  <div class="header-container">
+      <div class="header-logo">
+          <a href="../index.html"><img src="../images/TAQ-logo.png" alt="" class="logo"></a>
+      </div>
+      <div class="header-links-container">
+        <span class="header-links list-triangle"><a href="../index.html">Current Issue</a>
+          <ul>
+            <li><a href="editors-letter.html">Editor's Letter</a></li>
+            <li><a href="masthead.html">Masthead</a></li>
+          </ul>
+        </span>
+        <span class="header-links"><a href="index.html" class="link-active">About</a></span>
+        <span class="header-links list-triangle"><a href="../events/solas/index.html">Events</a>
+          <ul>
+           <li><a href="../events/solas/index.html">SOLAS</a></li>
+           <li><a href="../events/tahiti-tofino/index.html">Tiny Atlas Trips</a></li>
+           <li><a href="../events/leadinghotelsgiveaway/index.html">Giveaway: Leading Hotels</a></li>
+           <li><a href="../events/montauk/index.html">Montauk Show</a></li>
+          </ul>
+        </span>
+        <span class="header-links"><a href="https://tiny-atlas-solas-a-casual-camera-bag-for-photograp.backerkit.com/hosted_preorders" target="_blank">Shop</a>
+        </span>
+      </div>
+  </div>
+
+
+            <!-- PAGE NAVIGATION ------------------------------------------------------------->
+
+
             <!-- PAGE 01 ------------------------------------------------------------->
-        	<!-- PAGE -->  
-			<div id="page1" class="pg-page">
-  			<!-- WRAPPER -->
-            <div class="pg-wrapper">  
-                
-                <!-- IMAGE START -->
-               <picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/tiny-atlas-quarterly-about-water-2014-L.jpg" media="(min-width: 960px)">
-                 <source srcset="images/tiny-atlas-quarterly-about-water-2014-M.jpg" media="(min-width: 768px)">
-					<!--[if IE 9]></video><![endif]-->
-					<img srcset="images/tiny-atlas-quarterly-about-water-2014-S.jpg" alt="Tiny Atlas Quarterly, Helena Price and Julianna Goodman, Norway">
-			  </picture>
+            <div id="page1" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/about-2017-emily-shur-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/about-2017-emily-shur-M.jpg" media="(min-width: 768px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/about-2017-emily-shur-S.jpg" alt="Tiny Atlas Quarterly, Tokyo, Emily Shur">
+                </picture>
                 <!-- IMAGE END -->
-                
-              <!-- BOX -->  
-           	  <div class="pg-box pg-lower-caption  pg-caption-light">  
-                   
-                   <!-- CAPTION -->
-                   <!-- LEFT CAPTION -->
-                   <div class="pg-box-content">
-                     	<h1>ABOUT TINY ATLAS QUARTERLY</h1>
-                		<p><span class="txt-medium"><em>Tiny Atlas Quarterly</em> is a collective of talented creatives that specializes in telling rich, beautiful stories that unfold through images, art, and personal accounts of fascinating people and remarkable places.</span></p>
-                        
-                        <p><span class="txt-medium"><em>Tiny Atlas Creative</em> offers travel and lifestyle photography, video and editorial story content for an array of media and marketing platforms. We can also help brands reach influencers, extend their awareness and increase engagement via our social media channels, events, and other platforms.</span></p>
-                        
-                        <p><span class="txt-medium"><em>Tiny Atlas Quarterly Magazine</em> is an extension of our collaborative work as professionals, created on a very personal level. It’s where we share all the places we love to travel ourselves, as well as how we see our own backyards. Think of it as the after party, once the commercial shoot wraps and, handily, the little black book of where to go and what to do if you find yourself there one day, too.</span></p>
-                        
-                        <div style="margin: 1em 0 0 0">
-                        <h2>OUR TEAM</h2>
-                		<p><span class="txt-medium">
-                        Tiny Atlas Quarterly was co-founded by Emily Nathan, Liz Mullally and Jake Huffman, in 2012, with Jill Lindenbaum and Deb Hearey joining soon after. We each bring more than 15 years of area expertise and have worked on major campaigns for such brands as Google, Apple, Mastercard, Amazon, CNN, Ritz-Carlton, and Heath Ceramics and publications including Dwell, Travel &amp; Leisure, Martha Stewart Living, Vogue Living, Elle and many others. Through our shared love of travel, our goal is to connect people through beautiful work and offer a unique take on new and familiar destinations. </span></p>
-                        
-                        <!--<p>
-                        EMILY NATHAN
-						<br />LIZ MULALLY
-						<br />JAKE HUFFMAN
-                        </p>-->
-                </div>
-                   
-              </div> <!-- END BOX -->
-               
-                
-           </div><!-- end wrapper div -->
-           </div>
-          <!-- END PAGE 01 ------------------------------------------------------------->
-          
-          
+
+                <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+
+                    <!-- CAPTION -->
+                    <!-- LEFT CAPTION -->
+                    <div class="pg-box-content">
+                       <!-- CONTENT -->
+                       <!-- INTERVIW -->
+                       <div id="pg-interview">
+                       <div class="title-ill about-logo"><img src="images/logo-big.png" alt=""></div>
+                       <p>Tiny Atlas Quarterly is a collective of talented creatives that specializes in telling rich, beautiful stories that unfold through images, art, and personal accounts of fascinating people and remarkable places.</p>
+                       <p>Tiny Atlas Creative offers travel and lifestyle photography, video and editorial story content for an array of media and marketing platforms. We can also help brands reach influencers, extend their awareness and increase engagement via our social media channels, events, and other platforms.</p>
+                       <p>Tiny Atlas Quarterly Magazine is an extension of our collaborative work as professionals, created on a very personal level. It’s where we share all the places we love to travel ourselves, as well as how we see our own backyards. Think of it as the after party, once the commercial shoot wraps and, handily, the little black book of where to go and what to do if you find yourself there one day, too.</p>
+                       <h3>Contact</h3>
+                       <p><a href="https://www.instagram.com/tinyatlasquarterly/">Instagram @tinyatlasquarterly</a><a href="https://www.instagram.com/explore/tags/mytinyatlas/"> #mytinyatlas</a><br />
+                          <a href="https://twitter.com/TinyAtlasQtrly">twitter @tinyatlasqtrly</a></p>
+                       <p>Questions: <a href="mailto:info@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">info@tinyatlasquarterly.com</a> <br />
+                          Press Inquries 	&amp; Ad Sales: <a href="mailto:jill@tinyatlasquarterly.com?Subject=Tiny%20Atlas%20Quarterly">
+                       Jill Hudes Lindenbaum</a><br />
+                       <a href="stockists.html">Stockists</a>
+                       </p>
+                       </div>
+                  </div><!--END INTERVIEW -->
+               </div> <!-- END BOX -->
+
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 01 ------------------------------------------------------------->
 
 <!-- PAGE 0 ------------------------------------------------------------->
-        	<!-- wrapper div -->  
-            <div id="page-zero" class="pg-page">
-            <div class="pg-wrapper">  
-               <!-- image -->  
-               <img src="../images/blank-L.png" />
-           </div><!-- end wrapper div -->
-           		<!-- NAV -->
-          		<div id="nav-holder"><div id="nav"><a href="../index.html"><img src="../images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></a></div></div>
-           </div>
+
           <!-- END PAGE 0 ------------------------------------------------------------->
-          
+
+        <script type="text/javascript" src="../js/hammer.min.js"></script>
         <script>
 
-        <!-------------------- THE GOOGLE --------------------->
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-39716054-1']);
 		  _gaq.push(['_trackPageview']);

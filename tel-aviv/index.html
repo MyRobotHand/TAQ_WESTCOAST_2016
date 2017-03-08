@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tiny Atlas Quarterly | Tel Aviv, Israel </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../css/features.css" />
+    <link rel="shortcut icon" href="../images/favicon.png">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.transit.js"></script>
+
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="../js/picturefill.2.1.0.js" async></script>
+
+    <script src="../js/sil.js"></script>
+
+    <script>
+        $(window).load(function() {
+            //This is where you could start a loading animation.
+
+            //Then start loading the images.
+            $.preloadImages({
+                StepCallback: function(CurrentImage, TotalImages, LoadedElement, LoadTime) {
+                    console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+                    //This is where you could update some sort of progress indicator.
+                },
+
+                DoneCallback: function() {
+                    console.log("Done loading the images.");
+
+                    //This is where you could stop the loading animation.
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#page1").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-buttons").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-holder").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+        });
+    </script>
+
+</head>
+
+
+<body id="taqPage">
+
+    <!-- PAGE NAVIGATION ------------------------------------------------------------->
+    <div id="nav-buttons" class="pg-nav"><span class="pg-prev" id="pg-pageDown"></span><span class="pg-next" id="pg-pageUp"></span></div>
+    <div style="display:none;">
+        <img src="../images/arrow_next.png">
+        <img src="../images/arrow_prev.png">
+        <img src="../images/blank-L.png">
+        <img src="../images/blank-S.png">
+        <img src="../images/tiny-atlas-sm.jpg">
+    </div>
+
+    <!-- PAGE 01 ------------------------------------------------------------->
+    <div id="page1" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/01_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/01_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/01_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-box-intro">
+
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <div class="title-ill"><img src="images/tel-aviv-title-illo.png" alt="" style="max-width:278px;"></div>
+                        <h3>Photography by: Liah Chesnokov<br />
+                         Written by: Flora Tsapovsky<br />
+                         Title &amp; Illustration by: Alex Hollender</h3>
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 01 ------------------------------------------------------------->
+
+    <!-- PAGE 02 ------------------------------------------------------------->
+    <div id="page2" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/02_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/02_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/02_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 02 ------------------------------------------------------------->
+
+    <!-- PAGE 03 ------------------------------------------------------------->
+    <div id="page3" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/03_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/03_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/03_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 03 ------------------------------------------------------------->
+
+    <!-- PAGE 04 ------------------------------------------------------------->
+    <div id="page4" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/04_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/04_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/04_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 04 ------------------------------------------------------------->
+
+    <!-- PAGE 05 ------------------------------------------------------------->
+    <div id="page5" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/05_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/05_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/05_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 05 ------------------------------------------------------------->
+
+    <!-- PAGE 06 ------------------------------------------------------------->
+    <div id="page6" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/06_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/06_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/06_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 06 ------------------------------------------------------------->
+
+    <!-- PAGE 07 ------------------------------------------------------------->
+    <div id="page7" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/07_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/07_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/07_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 07 ------------------------------------------------------------->
+
+    <!-- PAGE 08 ------------------------------------------------------------->
+    <div id="page8" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/08_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/08_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/08_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/08_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+
+            <!-- BOX  INTERVIEW-->
+                 <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+            <!-- CAPTION -->
+            <!-- LEFT CAPTION -->
+            <div class="pg-box-content">
+                <!-- CONTENT -->
+                <!-- INTERVIW -->
+                <div id="pg-interview">
+                    <img src="images/tel-aviv-map.png" alt="" class="ill">
+                    <h2 class="with-ill">Tel Aviv</h2>
+                    <p>
+                      Tel Aviv, to many visitors, is all about the beaches. Being on the coastline is an undeniable perk, but Tel Aviv is larger than its most marketable feature. In fact, a big percentage of its nondescript charm (ask any local, and they’ll lovingly tell you Tel Aviv is in fact ‘ugly’) lies in the city’s inner neighborhoods, along its dusty boulevards and among its shabby-chic Bauhaus buildings. One of those neighborhoods is Florentin - located in the south of Tel Aviv, between historic Neve Tzedek, leafy Rothschild Boulevard and sketchy Tahana Merkazit. Florentine is neither stylish, sketchy or picturesque - it’s a lived-in Tel Avivian neighborhood with rows upon rows of 4-stories apartment buildings, and a myriad of bars and eateries dotting the narrow streets. During the day, it’s a hectic hub of small houseware stores, fabric wholesalers and repairs businesses and at night, it’s a popular hangout for food, drinks and people-watching, free of pretense and always welcoming.
+                    </p>
+                    <p>
+                      Within Florentin, micro-hoods evolve around the more popular businesses. One such area is Levinsky, a maze of spice shops, delis and emerging hip restaurants. In big cities, one popular place sprouts more openings nearby; Levinsky developed this way,too. One after another, trendy restaurants and kiosks have started appearing here in recent years, and HaHalutzim 3, a blink-and-you-miss it restaurant, was one of the first ones - named after the street it’s on, ‘halutzim’ in Hebrew aptly means ‘pioneers’. Eytan Vanunu and Naama Szterenlicht, the couple who own it, dreamt of opening a small restaurant for some time, and the result looks like someone’s adorably cluttered and happening living room. Mismatched chairs and vintage plates, an open kitchen and only a few seats, permanently occupied.
+                    </p>
+                    <p>
+                      HaHalutzim 3 and its creators live the Levinsky pace every day. Vanunu, the chef, and Szterenlicht, front of the house and supporting consultant, don’t need to go far to shop for fresh ingredients for the restaurant - almost everything is available a few blocks around it. A typical week can start with a colorful ‘gazoz’ drink from the tiny, hole in the wall Cafe Levinsky 41 — an edible, drinkable bouquet of fruits, herbs and bubbles is created on the spotin an elaborate, mouthwatering process. Then, the morning sun disappears upon entering the low-ceiling, intimate spice shop Chavshush Ariye, a long-standing neighborhood institution. Dried Persian lemon, cumin and chili fragrances float in the air, bags upon bags of powders and herbs fill the shelves. Lunch sneaks up quickly, and a crumbly burekas (philo and cheese pastry from the Balkans), preferably from Burekas Levinsky, is an instantaneous, messy comfort in a paper bag. Then, the two are ready to head back and start orchestrating the dinner menu. The menu is an Israeli-European affair, merging buttery rich pastas and feta-sprinkled fresh salads, fresh fish with hearty stews. These days, Israeli cuisine is almost impossible to define, but there are a few constants - fresh vegetables, olive oil, open fire roasting, fresh ocean fish and seafood, herbs and bold flavors. On a sunny afternoon, Vanunu makes gazpacho and lentil salad, blitzing fiery tomatoes and chopping onions, mixing yogurt and olive oil. Outside, cars are tightly parked by the sidewalk, bicycles pass, nothing seems too slick. Like HaHalutzim 3 itself, Levinsky is authentic and humble, and neither need to work hard to keep you coming back.
+                    </p>
+
+                </div>
+            </div>
+            <!--END INTERVIEW -->
+        </div>
+        <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 08 ------------------------------------------------------------->
+
+    <!-- PAGE 09 ------------------------------------------------------------->
+    <div id="page9" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/09_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/09_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/09_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/09_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 09 ------------------------------------------------------------->
+
+    <!-- PAGE 10 ------------------------------------------------------------->
+    <div id="page10" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/10_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/10_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/10_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 10 ------------------------------------------------------------->
+
+    <!-- PAGE 11 ------------------------------------------------------------->
+    <div id="page11" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/11_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/11_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/11_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 11 ------------------------------------------------------------->
+
+    <!-- PAGE 12 ------------------------------------------------------------->
+    <div id="page12" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/12_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/12_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/12_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 12 ------------------------------------------------------------->
+
+    <!-- PAGE 13 ------------------------------------------------------------->
+    <div id="page13" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/13_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/13_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/13_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+                 <div class="pg-box pg-lower-caption pg-upper-right-caption pg-lower">
+            <!-- CAPTION -->
+            <!-- LEFT CAPTION -->
+            <div class="pg-box-content">
+                <!-- CONTENT -->
+                <!-- INTERVIW -->
+                <div id="pg-interview">
+
+                  <h2>Halutzim 3 lentil salad</h2>
+                  <ul class="recipe">
+                    <li>1 pound black ‘caviar’ lentils </li>
+                    <li>1 white onion, peeled and chopped</li>
+                    <li>1 carrot, peeled and chopped </li>
+                    <li>2 celery stalks</li>
+                    <li>Bay leaf</li>
+                    <li>Cumin</li>
+                    <li>Peeled garlic cloves</li>
+                    <li>A handful of raw almonds</li>
+                    <li>A handful of lemon pickle</li>
+                    <li>1 tbs hot green pepper (like jalapeno)</li>
+                    <li>A bunch of cilantro</li>
+                    <li>A bunch of parsley</li>
+                    <li>1 tomato, chopped</li>
+                    <li>Atlantic salt, freshly ground pepper</li>
+                    <li>Goat yogurt</li>
+                    <li>Olive oil</li>
+                  </ul>
+                  <p>
+                    In a thick pot, heat the oil and brown the vegetables (celery, garlic, onion and carrots). Add lentils and spices, add 1 inch water above the lentils, and cover with a lid.  Bring to boil, then simmer for about 15 minutes,until lentils are soft. Discard vegetables and cool. Mix cooked lentils with lemon, almonds, hot pepper, greens, chopped tomato, salt and pepper. Season with olive oil and serve on top of yogurt.
+                  </p>
+
+                </div>
+            </div>
+            <!--END INTERVIEW -->
+        </div>
+        <!-- END BOX -->
+
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 13 ------------------------------------------------------------->
+
+    <!-- PAGE 14 ------------------------------------------------------------->
+    <div id="page14" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/15_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/15_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/15_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+
+
+
+                        <!-- BOX  INTERVIEW-->
+                             <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                        <!-- CAPTION -->
+                        <!-- LEFT CAPTION -->
+                        <div class="pg-box-content">
+                            <!-- CONTENT -->
+                            <!-- INTERVIW -->
+                            <div id="pg-interview">
+
+                                <h2>HaHalutzim 3 gazpacho (for a big party)</h2>
+                                <ul class="recipe">
+                                  <li>1 chili pepper</li>
+                                  <li>10 tomatoes</li>
+                                  <li>4 celery stalks</li>
+                                  <li>4 tomatoes</li>
+                                  <li>2 red peppers</li>
+                                  <li>2 garlic cloves</li>
+                                  <li> Red wine vinegar</li>
+                                  <li>Salt, pepper, sugar</li>
+                                  <li>Olive oil</li>
+                                </ul>
+
+                                <p>
+                                  Whizz all the ingredients in a food processor, while adding olive oil until the mixture turns silky smooth.
+                                </p>
+
+
+                            </div>
+                        </div>
+                        <!--END INTERVIEW -->
+                    </div>
+                    <!-- END BOX -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 14 ------------------------------------------------------------->
+
+    <!-- PAGE 15 ------------------------------------------------------------->
+    <div id="page15" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/14_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/14_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/14_Tel_Aviv_Liah_Chesnokov_writer_Flora_Tsapovsky_TAQ_City-S.jpg" alt="Tiny Atlas Quarterly, Tel Aviv, Flora Tsapovsky">
+            </picture>
+            <!-- IMAGE END -->
+
+
+
+                                    <!-- BOX  INTERVIEW-->
+                                    <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                                      <!-- CAPTION -->
+                                      <!-- LEFT CAPTION -->
+                                      <div class="pg-box-content">
+                                         <!-- CONTENT -->
+                                         <!-- INTERVIW -->
+                                         <div id="pg-interview">
+                                         <h2>Resources</h2>
+
+                                         <h4>Eat:</h4>
+
+                                         <a href="https://www.halutzim3.com/"><h5>HaHlutzim 3</h5></a>
+                                         <p>An intimate restaurant by Eytan Vanunu and Naama Szterenlicht.</p>
+
+                                         <a href="http://dalidatlv.co.il/"><h5>Dalida</h5></a>
+                                         <p>A romantic, candle lit restaurant with an outdoor garden, serving elevated Mediterranean fare.</p>
+
+                                         <a href="https://www.facebook.com/Fifis.Asian.Food/"><h5>Fifi’s</h5></a>
+                                         <p>A brand new, family-owned spot serving authentic Thai food.</p>
+
+                                         <a href="https://www.facebook.com/CaffeKaymak/"><h5>Cafe Kaimak</h5></a>
+                                         <p>A tiny coffee shop perfect for breakfast.</p>
+
+                                         <a href="https://www.facebook.com/Barmitzvah.kaymak/"><h5>Bar Mitzva</h5></a>
+                                         <p>A small local bar with unpretentious atmosphere.</p>
+
+                                         <a href="https://www.facebook.com/levinsky41/"><h5>Cafe Levinsky 41</h5></a>
+                                         <p>A tiny kiosk serving delicious sparkly drinks.</p>
+
+                                         <a href="http://en.shuktlv.co.il/category/chavshush"><h5>Chavshush Ariye</h5></a>
+                                         <p>A chaotic, authentic spice shop run by a family.</p>
+
+                                         <a href="http://en.shuktlv.co.il/category/levinsky-burekas"><h5>Burekas Levinsky</h5></a>
+                                         <p>A bakery specializing in crumbly,  savory phyllo dough pastries.</p>
+
+                                         <h4>Stay:</h4>
+
+                                         <a href="https://florentinhouse.com/"><h5>Florentine House</h5></a>
+                                         <p>A urban, minimal boutique hotel in the heart of Florentin.</p>
+
+                                         <a href="https://www.airbnb.com/rooms/13655167?adults=1&checkin=04%2F01%2F2017&checkout=04%2F 02%2F2017&children=0&guests=1&infants=0&locale=en&s=VVhYAsqw"><h5>Dream Bauhaus</h5></a>
+                                         <p>A spacious loft with a clawfoot bathtub and exposed brick walls.</p>
+
+                                         <a href="http://lilyandbloom.com/en/homepage/"><h5>Lily and Bloom</h5></a>
+                                         <p>A new and polished boutique hotel just outside of Florentin.</p>
+
+                                         <h4>Do:</h4>
+
+                                         <a href="http://en.shuktlv.co.il/category/chaim-raphael"><h5>Haim Rafael</h5></a>
+                                         <p>This is the best deli in the neighborhood, offering pickles, charcuterie and smoked fish.</p>
+
+                                         <a href="https://www.tel-o-fun.co.il/en/"><h5>Tel-O-fun</h5></a>
+                                         <p>Explore the neighborhood with Tel Aviv’s bike share system. The green bike stations  all over
+                        Florentin, available to rent on hourly basis.</p>
+
+                                         </div>
+                                    </div><!--END INTERVIEW -->
+                                   </div> <!-- END BOX -->
+
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 15 ------------------------------------------------------------->
+
+    <!-- PAGE 0 ------------------------------------------------------------->
+    <!-- wrapper div -->
+    <div id="page-zero" class="pg-page">
+        <div class="pg-wrapper">
+            <!-- image -->
+            <img src="../images/blank-L.png" />
+        </div>
+        <!-- end wrapper div -->
+        <!-- NAV -->
+        <div id="nav-holder">
+            <div id="nav">
+
+                <a href="../index.html"><img src="../images/back-arrow.svg" alt="" class="back-arrow"><img src="../images/feature-logo.png" alt="Tiny Atlas Quarterly" class="crest"></a>
+                <div class="title">
+                    <span class="issue">City 2O17</span><br>
+                    <span class="feature">Tel Aviv</span>
+                </div>
+                <div class="feature-links">
+                  <span id="pageLink"><a href="#page15">Resources</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END PAGE 0 ------------------------------------------------------------->
+
+    <script type="text/javascript" src="../js/hammer.min.js"></script>
+    <script>
+        //----------------- SLIDE SHOW ------------------------------//
+        var pgPages = new Array("page1",
+            "page2",
+            "page3",
+            "page5",
+            "page4",
+            "page6",
+            "page7",
+            "page8",
+            "page9",
+            "page10",
+            "page11",
+            "page12",
+            "page13",
+            "page14",
+            "page15");
+        var pageCount = 0;
+        var pageNext;
+        $('#pg-pageUp').on('click', function() {
+            pageUp();
+        });
+
+        $('#pg-pageDown').on('click', function() {
+            pageDown();
+        });
+
+        //------ START UP DOWN ------//
+        function pageUp() {
+            if (pageCount == (pgPages.length - 1)) {
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                pageCount = 0;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+            } else {
+                pageNext = pageCount + 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount++;
+            }
+        }
+
+        function pageDown() {
+            if (pageCount == 0) {
+                $("#" + pgPages[0]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }); // OUT
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount = pgPages.length - 1;
+            } else {
+                pageNext = pageCount - 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount--;
+            }
+        }
+
+        //------ END UP DOWN ------//
+
+        //------ Resources Linking ------//
+        $('#pageLink').on('click', function() {
+            pageLink();
+        });
+
+        function pageLink(){
+          $("#" + pgPages[pageCount]).velocity({
+              opacity: 0
+          }, {
+              display: "none"
+          }, {
+              duration: 1000
+          }, "easeInOutQuint"); // OUT
+          $("#page15").velocity({
+              opacity: 1
+          }, {
+              display: "block"
+          }, {
+              duration: 1000
+          }, "easeInOutQuint"); // IN
+          pageCount = 14;
+          pageNext = 0;
+        }
+
+        // TOUCH HANDLERS
+        var myElement = document.getElementById('taqPage');
+        var mc = new Hammer(myElement);
+
+        // listen to events...
+        mc.on("swipeleft", function() {
+            pageUp();
+        });
+        mc.on("swiperight", function() {
+            pageDown();
+        });
+        //----------------- END SLIDE SHOW -----------------//
+
+
+        //------------------ NAV WIDTH -----------------//
+
+
+
+        //------------------- THE GOOGLE ---------------------//
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39716054-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>
