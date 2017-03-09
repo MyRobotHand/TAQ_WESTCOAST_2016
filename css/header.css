@@ -40,6 +40,7 @@
 .header-links-container a {
 	color:#232323;
 	letter-spacing: .5px;
+	border-bottom: none;
 }
 
 .header-links-container a:link {
